@@ -4,7 +4,7 @@ description: Aprender a usar Gitbook, investigando qué son las redes.
 
 # Actividad 1
 
-#### Los pasos a seguir para crear el GitBook:
+Los pasos a seguir para crear el GitBook:
 
 El procedimiento que he utilizado:
 
@@ -35,7 +35,7 @@ El procedimiento que he utilizado:
 
 
 
-\--------------------------------------------------------------------------------------------------------
+
 
 #### ¿Qué? ¿Por Qué? ¿Impacto?
 
