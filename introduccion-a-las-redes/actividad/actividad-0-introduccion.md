@@ -17,18 +17,8 @@ El procedimiento que he utilizado:
 
 #### Pasos para conectar GitBook con GitHub
 
-1. Ir a los ajustes del espacio en GitBook:
-   * Entra en tu espacio de trabajo de GitBook.
-   * En el menú lateral o de configuración, busca la opción Integrations (Integraciones) o GitHub.
-2. Autorizar la integración con GitHub:
-   * Haz clic en Install GitHub Integration (o _Conectar con GitHub_).
-   * Te redirigirá a GitHub para autorizar la aplicación de GitBook (_OAuth Application_).
-   * Selecciona si deseas darle acceso a todos los repositorios o únicamente al repositorio específico de tu proyecto.
-3. Configurar el repositorio y la rama (_Branch_):
-   * Selecciona tu organización o cuenta de usuario de GitHub.
-   * Elige el repositorio que quieres vincular (por ejemplo, el de la memoria de tu proyecto).
-   * Selecciona la rama principal que quieres sincronizar (habitualmente `main` o `master`).
-4. Elegir la dirección de sincronización:
-   * Bidireccional (Recomendado): Permite editar tanto desde la interfaz de GitBook como directamente subiendo archivos Markdown en GitHub. Los cambios se actualizarán solos en ambos sitios.
-5. Confirmar la sincronización inicial:
-   * Haz clic en Sync / Save. GitBook importará los archivos de tu repositorio de GitHub (o exportará el contenido actual de GitBook a GitHub si el repositorio estaba vacío).
+1. Ir a los ajustes del espacio en GitBook: Entra en tu espacio de trabajo de GitBook. En el menú lateral o de configuración, busca la opción Integrations (Integraciones) o GitHub.
+2. Autorizar la integración con GitHub: Haz clic en Install GitHub Integration (o _Conectar con GitHub_). Te redirigirá a GitHub para autorizar la aplicación de GitBook (_OAuth Application_). Selecciona si deseas darle acceso a todos los repositorios o únicamente al repositorio específico de tu proyecto.
+3. Configurar el repositorio y la rama (_Branch_): Selecciona tu organización o cuenta de usuario de GitHub. Elige el repositorio que quieres vincular (por ejemplo, el de la memoria de tu proyecto). Selecciona la rama principal que quieres sincronizar (habitualmente `main` o `master`).
+4. Elegir la dirección de sincronización: Permite editar tanto desde la interfaz de GitBook como directamente subiendo archivos Markdown en GitHub. Los cambios se actualizarán solos en ambos sitios.
+5. Confirmar la sincronización inicial:Haz clic en Sync / Save. GitBook importará los archivos de tu repositorio de GitHub (o exportará el contenido actual de GitBook a GitHub si el repositorio estaba vacío).
