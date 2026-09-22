@@ -2,7 +2,7 @@
 description: Aprender a usar Gitbook, investigando qué son las redes.
 ---
 
-# Actividad 1
+# 🧑‍💻 Actividad 1
 
 Los pasos a seguir para crear el GitBook:
 

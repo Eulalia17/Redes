@@ -1,3 +1,7 @@
+---
+icon: wifi
+---
+
 # Actividad 1.1
 
 #### ¿Qué? ¿Por Qué? ¿Impacto?
