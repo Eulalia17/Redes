@@ -2,7 +2,9 @@
 
 * [🫡 README](README.md)
 
-## 🫣 Actividades
+## 🫣 Introducción a las redes
 
-* [🧑‍💻 Actividad 1](actividades/actividad-1/README.md)
-  * [🤖 Actividad 1.1](actividades/actividad-1/actividad-1.1.md)
+* [🎥 Teoria](introduccion-a-las-redes/teoria/README.md)
+  * [🧐 B0-Introducción](introduccion-a-las-redes/teoria/b0-introduccion.md)
+* [🧑‍💻 Actividad](introduccion-a-las-redes/actividad/README.md)
+  * [🤖 Actividad 1](introduccion-a-las-redes/actividad/actividad-1.md)
