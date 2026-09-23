@@ -16,3 +16,7 @@ STP -->&#x20;
 Cable amarillo --> CAT.5; UTP; EIA|TIA; 568B;AWM; 24AWG.
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
