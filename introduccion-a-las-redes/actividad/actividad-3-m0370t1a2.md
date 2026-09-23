@@ -16,16 +16,16 @@ Lee detenidamente:
 ## Aula – cableado UTP
 
 1. Analiza el cableado del aula:&#x20;
-2. ¿Qué tipo de cable de red se está utilizando?
-3. ¿Qué características tiene el cable?
-4. ¿Qué tipo de cable le acompaña?
-5. Investiga las normativas para cableado de comunicación y de alimentación:\
-   ¿Cumple con las normativas? Argumenta.&#x20;
-6. Investigar en qué casos se recomienda la instalación de cableado UTP, FTP o STP
-7. En qué casos utilizamos cable cruzado y en cuáles directo. ¿Actualmente podemos utilizar indistintamente un tipo de cable u otro? Argumenta.
-8. Especifica la velocidad máxima de transmisión que soportan los diferentes tipos de cables de par trenzado.&#x20;
-9. Especifica el uso de cada uno de los 8 pines que componen el cable trenzado. ¿Cuántos se utilizan para transmisión?
-10. Realiza una comparativa entre las normas TIA 568A / B y C
+   1. ¿Qué tipo de cable de red se está utilizando?
+   2. ¿Qué características tiene el cable?
+   3. ¿Qué tipo de cable le acompaña?
+   4. Investiga las normativas para cableado de comunicación y de alimentación:\
+      ¿Cumple con las normativas? Argumenta.&#x20;
+   5. Investigar en qué casos se recomienda la instalación de cableado UTP, FTP o STP
+   6. En qué casos utilizamos cable cruzado y en cuáles directo. ¿Actualmente podemos utilizar indistintamente un tipo de cable u otro? Argumenta.
+   7. Especifica la velocidad máxima de transmisión que soportan los diferentes tipos de cables de par trenzado.&#x20;
+   8. Especifica el uso de cada uno de los 8 pines que componen el cable trenzado. ¿Cuántos se utilizan para transmisión?
+   9. Realiza una comparativa entre las normas TIA 568A / B y C
 
 ## Fibra óptica
 
