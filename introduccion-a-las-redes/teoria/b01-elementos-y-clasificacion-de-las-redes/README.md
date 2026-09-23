@@ -2,7 +2,7 @@
 icon: router
 ---
 
-# Elementos y clasificación de las redes
+# B01-Elementos y clasificación de las redes
 
 ## Elementos de una red
 
@@ -33,26 +33,19 @@ características y de la calidad&#x20;de la transmisión en cuanto&#x20;a:
 
 ### Clasificación de las redes
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ### Clasificación de las redes: por el alcance y extensión
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 La localización geográfica de la red es un factor&#x20;importante puesto que tiene en cuenta la distancia&#x20;que hay entre los dispositivos finales que&#x20;intercambian información.
 
-### Los tipos de redes, ¿Que es ?
-
-* <kbd>IEEE --></kbd>
-* <kbd>802.11 --> WIFI</kbd>
-* <kbd>802.3 --> ethernet cable</kbd>&#x20;
-* <kbd>802.15 --> bluetooth</kbd>&#x20;
-
 ### Clasificación de las redes: por el alcance y extensión
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 ### PAN | WPAN
 
