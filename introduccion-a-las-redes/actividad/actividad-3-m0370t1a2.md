@@ -16,11 +16,17 @@ Lee detenidamente:
 ## Aula – cableado UTP
 
 1. Analiza el cableado del aula:&#x20;
-   1. ¿Qué tipo de cable de red se está utilizando?
-   2. ¿Qué características tiene el cable?
-   3. ¿Qué tipo de cable le acompaña?
-   4. Investiga las normativas para cableado de comunicación y de alimentación:\
-      ¿Cumple con las normativas? Argumenta.&#x20;
+   1. ¿Qué tipo de cable de red se está utilizando?És un cable UTP.
+   2. ¿Qué características tiene el cable?Tiene 4 pares, reduce interferencias electromagnéticas, par trenzado, cero protección, tiene flexibilidad.
+   3. ¿Qué tipo de cable le acompaña?Le acompaña el cable de alimentación es un LAN 6, de tipo UTP, es un 23AWG que tiene de anchura de 0,57mm, es un cable LSOH que significa que está libre de halógenos y tiene 4 pares. Y también es el cable verde es el de electricidad.
+   4.  Investiga las normativas para cableado de comunicación y de alimentación:\
+       ¿Cumple con las normativas? Argumenta. El cable de alimentación especifica los componentes de cableado,de transmisión, los modelos de sistemas y los procedimientos de medición necesarios para la verificación del cableado de par trenzado y es un TIA/EIA 568-B.2-1.
+
+       Y el cable de comunicación explica los requisitos generales para los sistemas de cableado de telecomunicaciones de uso general, este tipo de cableado se suele encontrar estructurado en edificios comerciales e industriales.
+
+       El cable de alimentación (TIA/EIA 568-B.2-1) y el de comunicación cumplen normativas al definir componentes y requisitos para un cableado adecuado en sistemas eléctricos y de telecomunicaciones, garantizando su correcta instalación en edificios.
+
+
    5. Investigar en qué casos se recomienda la instalación de cableado UTP, FTP o STP
    6. En qué casos utilizamos cable cruzado y en cuáles directo. ¿Actualmente podemos utilizar indistintamente un tipo de cable u otro? Argumenta.
    7. Especifica la velocidad máxima de transmisión que soportan los diferentes tipos de cables de par trenzado.&#x20;
@@ -30,10 +36,27 @@ Lee detenidamente:
 ## Fibra óptica
 
 1. ¿Cuáles son las ventajas y desventajas de la fibra óptica?
-2. ¿Cómo se realiza la transmisión de datos en la fibra óptica? ¿cuáles son los principios físicos que lo permiten? Argumenta (reflexión de la luz...)
+   * Las ventajas de la fibra óptica:
+     * Alta velocidad y ancho de banda:Permite transferencias de datos más rápidas y eficientes.
+     * Menos interferencias: Es inmune a interferencias electromagnéticas.
+     * Mayor distancia de transmisión: Los datos se pueden transmitir a largas distancias sin pérdida significativa de señal.
+     * Seguridad: No emite señales que puedan ser interceptadas fácilmente.
+   * Las desventajas de la fibra óptica:
+     * Coste elevado: Es más cara en términos de material e instalación en comparación con los cables de cobre.
+     * Fragilidad: Es más delicada y requiere manejo cuidadoso.
+     * Reparación compleja: La reparación y empalme requieren personal especializado y equipos específicos.
+2. ¿Cómo se realiza la transmisión de datos en la fibra óptica? ¿Cuáles son los principios físicos que lo permiten? Argumenta (reflexión de la luz...)
 3. ¿Cuáles son las principales ventajas de la fibra óptica en relación con los cables de cobre? Argumenta.
-4. ¿Qué tipos de fibra óptica existen?&#x20;
-5. ¿Cuál es la estructura de la fibra óptica?
+4.  ¿Qué tipos de fibra óptica existen? Dependiendo del número de modos de propagación, hay dos grandes tipos de fibra óptica: monomodo y multimodo.
+
+    Monomodo: Es una fibra óptica diseñada para transportar luz solo directamente a través de la fibra, el modo transversal.
+
+    Multimodo: Es un tipo de fibra óptica mayormente utilizada en el ámbito de la comunicación en distancias cortas
+
+
+5.  ¿Cuál es la estructura de la fibra óptica?Está constituida por un núcleo y un revestimiento, ambos cilindros concéntricos y con diferente índice de refracción, siendo el del exterior inferior al del interior. Según el uso y las condiciones a las que será sometida, la fibra óptica además se cubre externamente con una capa llamada recubrimiento.
+
+
 6. ¿En qué casos se recomienda el uso de cada tipo?
 7. ¿Cuáles serían las limitaciones a la hora de implementar y mantener redes de fibra óptica?
 
@@ -42,11 +65,11 @@ Lee detenidamente:
 1. ¿Qué es el cableado troncal y cuál es la función principal en una infraestructura de red?&#x20;
 2. ¿Cuáles son las diferencias entre cableado troncal de cobre y cableado troncal de fibra?¿En qué casos se debe elegir una u o otra?
 3. Revisa la webgrafía que te adjunto y explica la estructura del cableado estructurado atendiendo a:
-4. cableado vertical
-5. sala central de equipamiento
-6. armario de telecomunicaciones
-7. áreas de trabajo
-8. toma del edificio
+   1. cableado vertical
+   2. sala central de equipamiento
+   3. armario de telecomunicaciones
+   4. áreas de trabajo
+   5. toma del edificio
 
 ## Investiga herramientas de diseño de redes
 
