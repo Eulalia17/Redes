@@ -11,4 +11,5 @@
 * [🧑‍💻 Actividad](introduccion-a-las-redes/actividad/README.md)
   * [🦎 Actividad 0 - Introducción](introduccion-a-las-redes/actividad/actividad-0-introduccion.md)
   * [🤖 Actividad 1 - M0370B0A1](introduccion-a-las-redes/actividad/actividad-1-m0370b0a1.md)
-  * [Actividad 2 - Preguntas en clase](introduccion-a-las-redes/actividad/actividad-2-preguntas-en-clase.md)
+  * [🤔 Actividad 2 - Preguntas en clase](introduccion-a-las-redes/actividad/actividad-2-preguntas-en-clase.md)
+  * [Actividad 3 - M0370T1A2](introduccion-a-las-redes/actividad/actividad-3-m0370t1a2.md)

@@ -1,4 +1,4 @@
-# Actividad 2 - Preguntas en clase
+# 🤔 Actividad 2 - Preguntas en clase
 
 ### Los tipos de redes, ¿Que es ?
 
