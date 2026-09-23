@@ -20,3 +20,13 @@ Cable amarillo --> CAT.5; UTP; EIA|TIA; 568B;AWM; 24AWG.
 
 
 <figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+Tipos de cable de cobre -UTP- FTP- STP
+
+Blindaje de los cable
+
+Caracteristicas de los cables - normas -EIA/TIA 568A y B&#x20;
+
+¿Que son los pares de cables?
+
+RJ45 - RJ49 - RJ11 - RS232 (Consola)

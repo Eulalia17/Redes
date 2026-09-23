@@ -47,8 +47,8 @@ La localización geográfica de la red es un factor&#x20;importante puesto que 
 
 * <kbd>IEEE --></kbd>
 * <kbd>802.11 --> WIFI</kbd>
-* <kbd>802.3 --></kbd>&#x20;
-* <kbd>802.15 --></kbd>&#x20;
+* <kbd>802.3 --> ethernet cable</kbd>&#x20;
+* <kbd>802.15 --> bluetooth</kbd>&#x20;
 
 ### Clasificación de las redes: por el alcance y extensión
 
