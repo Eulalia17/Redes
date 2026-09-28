@@ -8,6 +8,7 @@
   * [🧐 B0-Introducción](introduccion-a-las-redes/teoria/b0-introduccion.md)
   * [B01-Elementos y clasificación de las redes](introduccion-a-las-redes/teoria/b01-elementos-y-clasificacion-de-las-redes/README.md)
     * [IA-Introducción a las redes](introduccion-a-las-redes/teoria/b01-elementos-y-clasificacion-de-las-redes/ia-introduccion-a-las-redes.md)
+    * [Introducción a la redes](introduccion-a-las-redes/teoria/b01-elementos-y-clasificacion-de-las-redes/introduccion-a-la-redes.md)
     * [Cableado](introduccion-a-las-redes/teoria/b01-elementos-y-clasificacion-de-las-redes/cableado.md)
 * [🧑‍💻 Actividad](introduccion-a-las-redes/actividad/README.md)
   * [🦎 Actividad 0 - Introducción](introduccion-a-las-redes/actividad/actividad-0-introduccion.md)
