@@ -105,7 +105,7 @@ Existen varios estándares pero&#x20;el que más se utiliza es el&#x20;estánd
 
 Las normas de cableado&#x20;estructurado definen como se&#x20;deben instalar las redes en&#x20;edificios y van desde los cables,&#x20;conectores y demás elementos&#x20;para asegurar la instalación&#x20;óptima y libre de fallos
 
-
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### UTP – T568
 
@@ -119,4 +119,50 @@ En el caso de la IEEE 802 puede ser T568A y T568B (siempre se&#x20;recomienda u
 ### T568 A
 
 <figure><img src="../../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+
+
+
+### UTP - características
+
+Dos cables de cobre aislados de 1mm de espesor\
+Enlazados de dos en dos, utilizado para reducir la interferencia eléctrica con&#x20;respecto a los pares cercanos y otras procedentes del exterior.\
+Uno de los cables está marcado con una línea que indica que se utiliza como&#x20;masa por su uso para transmisión digital\
+Impedancia característica de 100 Ω.\
+Fácil de instalar, alta velocidad de transmisión, bajo coste\
+Es más sensible a las perturbaciones externas que el cable coaxial
+
+### FTP - características
+
+Pares no apantallados\
+Dispone de una pantalla global para mejorar su nivel de protección ante&#x20;interferencias externas.\
+impedancia característica es de 120 Ω.\
+Utiliza los mismos conectores RJ45.\
+Tiene un precio intermedio entre el UTP y STP\
+Mejora la velocidad y aislamiento del UTP
+
+### STP - características
+
+Cada uno de los pares trenzados están rodeados de una cubierta&#x20;de protección normalmente hecha de aluminio.\
+Usados en redes que requieren altas prestaciones: mayor ancho&#x20;de banda, baja latencia y bajas tasas de error.\
+impedancia característica es de 150 Ω.\
+Utiliza los mismos conectores RJ49.\
+Son más caros y difíciles de instalar
+
+### S/STP - características
+
+Protección global alrededor de los pares apantallados.\
+Es el de mejores prestaciones y protección frente a altas frecuencias y&#x20;capacidad de transmisión a largas distancias.\
+Compatible con el RJ45.\
+El más costoso de todos\
+Resistencia es de 100 Ω
+
+Pares trenzados apantallados:
+
+Apantallados&#x20;individualmente con&#x20;malla global\
+Igual a los anteriores&#x20;pero añadiendo una&#x20;pantalla global a&#x20;todos los cables\
+Mayor inmunidad al&#x20;ruido
+
+<figure><img src="../../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+
+## UTP – FTP – STP
 
