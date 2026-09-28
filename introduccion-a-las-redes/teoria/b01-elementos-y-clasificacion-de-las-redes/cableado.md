@@ -7,11 +7,14 @@ icon: utility-pole-double
 
 ## Cableado
 
-UPT --> CAT 6; TIA| 568; 4 pares trenzados
+UPT --> CAT 6; TIA| 568; 4 pares trenzados.
 
-FTP -->&#x20;
+FTP --> CAT 6 / CAT 5e; TIA/EIA 568; 4 pares trenzados con pantalla global de lámina de aluminio.
 
-STP -->&#x20;
+\
+STP --> CAT 6 / CAT 6a; TIA/EIA 568; 4 pares trenzados con blindaje individual por cada par y malla exterior.
+
+
 
 Cable amarillo --> CAT.5; UTP; EIA|TIA; 568B;AWM; 24AWG.
 
