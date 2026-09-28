@@ -210,3 +210,15 @@ RJ11- Conector de 4 pines antiguo usado en telefonía y ADSL
 
 <figure><img src="../../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+
+
+
+## UTP – STP
+
+<figure><img src="../../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+
+## Conectores RJ45 – EIA/TIA 568 A y B
+
