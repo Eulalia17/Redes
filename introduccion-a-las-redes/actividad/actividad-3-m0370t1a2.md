@@ -240,17 +240,7 @@ Rellena la siguiente tabla con tres opciones:
        * Conectividad Wi-Fi (Doble Banda simultánea):
        * Banda 2.4 GHz: Wi-Fi 4 (802.11n), hasta 300 Mbps (mayor alcance).
        * Banda 5 GHz: Wi-Fi 5 (802.11ac), con 4 antenas internas en configuración 4x4 MIMO (máxima velocidad de la fibra).
-       * Indicadores LED: Panel frontal con luces indicadoras de estado para Red, Internet, Wi-Fi, Wi-Fi + y Teléfono.
-
-       b. En casa de David:
-
-       Tengo un router Smart WiFi (HGU) de Movistar.&#x20;
-
-       Tipo de equipo: Un dispositivo "3 en 1" que integra ONT GPON, router y punto de acceso Wi-Fi.
-
-       Puertos: 1 entrada óptica SC/APC (GPON), 4 puertos gigabit ethernet (RJ45) a 10/100/1000 Mbps y 1 puerto RJ11 para telefonía fija.
-
-       Conectividad Inalámbrica: Tiene doble banda simultánea (2.4 GHz con Wi-Fi 4 y 5 GHz con Wi-Fi 5 de alta velocidad).<br>
+       * Indicadores LED: Panel frontal con luces indicadoras de estado para Red, Internet, Wi-Fi, Wi-Fi + y Teléfono.<br>
 
 ## Diseña
 
