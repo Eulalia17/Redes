@@ -201,11 +201,9 @@ Rellena la siguiente tabla con tres opciones:
 
 <figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
-b. En casa de David:&#x20;
+<br>
 
-La fibra que llega es monomodo (SMF). Al igual que en la instalación de    Movistar FTTH (Fiber to the Home), se utiliza esta tecnología porque permite transmitir los datos mediante pulsos de luz a lo largo de grandes distancias desde la central de la compañía hasta el hogar sin que la señal sufra pérdidas ni degradación.<br>
-
-1. Especifica los tipos de cables que intervienen en la configuración
+2. Especifica los tipos de cables que intervienen en la configuración
    1.  En casa de Eulalia:
 
        El dispositivo receptor de la señal de red en la habitación es un Descodificador UHD Movistar+ fabricado por ARRIS (Modelo A 00412518 / VIP5242A), el cual recibe los datos de red por el cable Ethernet amarillo conectado a su puerto posterior.
@@ -215,29 +213,19 @@ La fibra que llega es monomodo (SMF). Al igual que en la instalación de    Movi
        Especificaciones del Router Smart WiFi de Movistar (HGU):
 
        * Tipo de equipo: Dispositivo "3 en 1" que integra ONT GPON + Router + Punto de Acceso Wi-Fi.
-       * Entrada de red (WAN): 1 puerto óptico SC/APC (GPON) de fibra monomodo.
-       * Puertos de red local (LAN): 4 puertos Gigabit Ethernet (RJ45) a 10/100/1000 Mbps (donde se conecta el cable Ethernet amarillo hacia el descodificador ARRIS).
-       * Puerto de telefonía: 1 puerto RJ11 (FXS) para la línea fija mediante VoIP.
-       * Conectividad Wi-Fi (Doble Banda simultánea):
-       * Banda 2.4 GHz: Wi-Fi 4 (802.11n), hasta 300 Mbps (mayor alcance).
-       * Banda 5 GHz: Wi-Fi 5 (802.11ac), con 4 antenas internas en configuración 4x4 MIMO (máxima velocidad de la fibra).
-       * Indicadores LED: Panel frontal con luces indicadoras de estado para Red, Internet, Wi-Fi, Wi-Fi + y Teléfono.
-
-       b. En casa de David:
-
-       Tengo un router Smart WiFi (HGU) de Movistar.&#x20;
-
-       Tipo de equipo: Un dispositivo "3 en 1" que integra ONT GPON, router y punto de acceso Wi-Fi.
-
-       Puertos: 1 entrada óptica SC/APC (GPON), 4 puertos gigabit ethernet (RJ45) a 10/100/1000 Mbps y 1 puerto RJ11 para telefonía fija.
-
-       Conectividad Inalámbrica: Tiene doble banda simultánea (2.4 GHz con Wi-Fi 4 y 5 GHz con Wi-Fi 5 de alta velocidad).
+         * Entrada de red (WAN): 1 puerto óptico SC/APC (GPON) de fibra monomodo.
+         * Puertos de red local (LAN): 4 puertos Gigabit Ethernet (RJ45) a 10/100/1000 Mbps (donde se conecta el cable Ethernet amarillo hacia el descodificador ARRIS).
+         * Puerto de telefonía: 1 puerto RJ11 (FXS) para la línea fija mediante VoIP.
+         * Conectividad Wi-Fi (Doble Banda simultánea):
+         * Banda 2.4 GHz: Wi-Fi 4 (802.11n), hasta 300 Mbps (mayor alcance).
+         * Banda 5 GHz: Wi-Fi 5 (802.11ac), con 4 antenas internas en configuración 4x4 MIMO (máxima velocidad de la fibra).
+         * Indicadores LED: Panel frontal con luces indicadoras de estado para Red, Internet, Wi-Fi, Wi-Fi + y Teléfono.
 
 
-2. ¿Qué tipo de router tienes? Las especificaciones del mismo.
-   1.
 
-       En casa de Eulalia:
+
+3. ¿Qué tipo de router tienes? Las especificaciones del mismo.
+   1.  En casa de Eulalia:
 
        El dispositivo receptor de la señal de red en la habitación es un Descodificador UHD Movistar+ fabricado por ARRIS (Modelo A 00412518 / VIP5242A), el cual recibe los datos de red por el cable Ethernet amarillo conectado a su puerto posterior.
 
@@ -273,46 +261,31 @@ Selecciona una de las herramientas gratuitas anteriores y utilízala para diseñ
 
        Dirección IPv4 del equipo (PC/Portátil): 192.168.1.56 (obtenida a través del "Adaptador de LAN inalámbrica Wi-Fi").
 
-       Puerta de enlace predeterminada (Router Movistar): 192.168.1.
-   2.  En casa de David:
+       Puerta de enlace predeterminada (Router Movistar): 192.168.1.<br>
+2.  ¿Qué topología se implementa en la red: bus, árbol, estrella...?&#x20;
 
-       Dirección IPv4 de mi PC: Es la IP 192.168.1.46.
+    1.  En casa de Eulalia: La topología que se implementa en la red doméstica es en Estrella.
 
-       Puerta de enlace predeterminada (Router): 192.168.1.1<br>
-2. ¿Qué topología se implementa en la red: bus, árbol, estrella...?&#x20;
-   1.  En casa de Eulalia: La topología que se implementa en la red doméstica es en Estrella.
-
-       Justificación: Todos los dispositivos de la casa (tu ordenador con IP 192.168.1.56, teléfonos móviles, descodificador de televisión, Smart TV, etc.) Se conectan de forma centralizada al Router Smart WiFi de Movistar (que actúa con la IP 192.168.1.1 como punto de acceso y conmutador central).
-   2.  En la casa de David:
-
-       La tipología que se implementa es una topología estrella.
+        Justificación: Todos los dispositivos de la casa (tu ordenador con IP 192.168.1.56, teléfonos móviles, descodificador de televisión, Smart TV, etc.) Se conectan de forma centralizada al Router Smart WiFi de Movistar (que actúa con la IP 192.168.1.1 como punto de acceso y conmutador central).
 
 
-3.  ¿Qué características tiene ese tipo de topología?
+3. ¿Qué características tiene ese tipo de topología?
+   1.  En casa de Eulalia:
 
-    1.  En casa de Eulalia:
+       Las características claves de la tipología estrella
 
-        Las características claves de la tipología estrella
-
-        * Nodo central concentrador: Todos los equipos envían y reciben la información a través del equipo central (el router doméstico 192.168.1.1), el cual gestiona el tráfico entre los dispositivos de la red local e Internet.
-        * Aislamiento de fallos: Si un dispositivo pierde la conexión (por ejemplo, si se apaga el Wi-Fi del móvil o se desconecta el ordenador), el resto de la red sigue funcionando sin verse afectado.
-        * Fácil instalación y gestión: Añadir un nuevo equipo a la red (por cable Ethernet o mediante Wi-Fi) es inmediato y no interrumpe el servicio de los demás.
-        * Dependencia del punto central (Punto único de fallo): Si el router central se apaga, se avería o se reinicia, toda la red local de la vivienda se queda sin conexión entre los dispositivos y sin acceso a Internet.
+       * Nodo central concentrador: Todos los equipos envían y reciben la información a través del equipo central (el router doméstico 192.168.1.1), el cual gestiona el tráfico entre los dispositivos de la red local e Internet.
+       * Aislamiento de fallos: Si un dispositivo pierde la conexión (por ejemplo, si se apaga el Wi-Fi del móvil o se desconecta el ordenador), el resto de la red sigue funcionando sin verse afectado.
+       * Fácil instalación y gestión: Añadir un nuevo equipo a la red (por cable Ethernet o mediante Wi-Fi) es inmediato y no interrumpe el servicio de los demás.
+       * Dependencia del punto central (Punto único de fallo): Si el router central se apaga, se avería o se reinicia, toda la red local de la vivienda se queda sin conexión entre los dispositivos y sin acceso a Internet.
 
 
 
 
 
-        <img src="../../.gitbook/assets/unknown (1).png" alt="" height="243" width="624">
+       <img src="../../.gitbook/assets/unknown (1).png" alt="" height="243" width="624">
 
-
-    2. En casa de David:  Todos los equipos de la casa se conectan de forma centralizada al Router Smart WiFi. En caso de que si un dispositivo se desconecta o falla, el resto de la red sigue funcionando con total normalidad; sin embargo, si el router central se apaga, toda la red local e Internet dejan de estar accesibles.&#x20;
-
-
-
-<img src="../../.gitbook/assets/unknown (2).png" alt="" height="243" width="624">
-
-
+##
 
 ## Enlaces
 
