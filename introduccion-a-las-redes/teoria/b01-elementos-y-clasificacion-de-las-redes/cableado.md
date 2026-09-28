@@ -68,3 +68,5 @@ Otro problema que se presenta en los&#x20;cables de cobre es la diafonía&#x20
 Esta es una perturbación ocasionada&#x20;por los campos eléctricos o magnéticos&#x20;generados por un cable adyacente.
 
 <figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+
+{% embed url="https://www.youtube.com/watch?v=TUmGoT1Fkyk" %}
