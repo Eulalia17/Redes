@@ -187,18 +187,25 @@ Rellena la siguiente tabla con tres opciones:
 
 ## Tu casa&#x20;
 
-1. Analiza e investiga la instalación de la red de tu casa.¿Qué tipo de fibra llega a tu casa: monomodo o multimodo? Argumenta
-   1.  En casa de Eulalia:
+1.  Analiza e investiga la instalación de la red de tu casa.¿Qué tipo de fibra llega a tu casa: monomodo o multimodo? Argumenta
 
-       La fibra que llega es monomodo, porque tiene la instalación de Movistar. Movistar opera sobre redes FTTH (Fiber to the Home) con tecnología GPON, la cual trabaja exclusivamente con fibra monomodo para cubrir grandes distancias desde la central hasta el domicilio sin degradación de la señal.
+    1.  En casa de Eulalia:
 
-       En la instalación de interior utilizan la normativa ITU-T G.657A2. Es un tipo de fibra monomodo ultra-flexible especialmente diseñada para interiores, ya que permite doblarse en esquinas y rincones muy cerrados sin que se atenúe o se pierda la señal de internet. Los latiguillos y rosetas que instala Movistar utilizan conectores SC/APC. Son fácilmente reconocibles porque el plástico exterior del conector es de color verde (indicativo de su pulido en ángulo de 8° para evitar reflexiones) y el latiguillo óptico de conexión suele ser de color amarillo.
+        La fibra que llega es monomodo, porque tiene la instalación de Movistar. Movistar opera sobre redes FTTH (Fiber to the Home) con tecnología GPON, la cual trabaja exclusivamente con fibra monomodo para cubrir grandes distancias desde la central hasta el domicilio sin degradación de la señal.
+
+        En la instalación de interior utilizan la normativa ITU-T G.657A2. Es un tipo de fibra monomodo ultra-flexible especialmente diseñada para interiores, ya que permite doblarse en esquinas y rincones muy cerrados sin que se atenúe o se pierda la señal de internet. Los latiguillos y rosetas que instala Movistar utilizan conectores SC/APC. Son fácilmente reconocibles porque el plástico exterior del conector es de color verde (indicativo de su pulido en ángulo de 8° para evitar reflexiones) y el latiguillo óptico de conexión suele ser de color amarillo.
+
+    <figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 
-   2.  En casa de David:&#x20;
 
-       La fibra que llega es monomodo (SMF). Al igual que en la instalación de    Movistar FTTH (Fiber to the Home), se utiliza esta tecnología porque permite transmitir los datos mediante pulsos de luz a lo largo de grandes distancias desde la central de la compañía hasta el hogar sin que la señal sufra pérdidas ni degradación.<br>
-2. Especifica los tipos de cables que intervienen en la configuración
+<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+
+b. En casa de David:&#x20;
+
+La fibra que llega es monomodo (SMF). Al igual que en la instalación de    Movistar FTTH (Fiber to the Home), se utiliza esta tecnología porque permite transmitir los datos mediante pulsos de luz a lo largo de grandes distancias desde la central de la compañía hasta el hogar sin que la señal sufra pérdidas ni degradación.<br>
+
+1. Especifica los tipos de cables que intervienen en la configuración
    1.  En casa de Eulalia:
 
        El dispositivo receptor de la señal de red en la habitación es un Descodificador UHD Movistar+ fabricado por ARRIS (Modelo A 00412518 / VIP5242A), el cual recibe los datos de red por el cable Ethernet amarillo conectado a su puerto posterior.
@@ -227,7 +234,7 @@ Rellena la siguiente tabla con tres opciones:
        Conectividad Inalámbrica: Tiene doble banda simultánea (2.4 GHz con Wi-Fi 4 y 5 GHz con Wi-Fi 5 de alta velocidad).
 
 
-3. ¿Qué tipo de router tienes? Las especificaciones del mismo.
+2. ¿Qué tipo de router tienes? Las especificaciones del mismo.
    1.
 
        En casa de Eulalia:
