@@ -4,7 +4,7 @@
 
 ### Organismos y Estándares (IEEE)
 
-* `IEEE: Siglas de`` `_`Institute of Electrical and Electronics Engineers`_`. Es la organización profesional internacional que define las normas y estándares de hardware, redes y telecomunicaciones.`
+* `IEEE: Siglas de Institute of Electrical and Electronics Engineers. Es la organización profesional internacional que define las normas y estándares de hardware, redes y telecomunicaciones.`
 * `IEEE 802.11: Estándar para redes inalámbricas WLAN (Wi-Fi).`
 * `IEEE 802.3: Estándar para redes locales cableadas (Ethernet).`
 *   `IEEE 802.15: Estándar para redes inalámbricas de área personal WPAN (Bluetooth, Zigbee).`
@@ -29,7 +29,7 @@ Son las dos normas estándar que definen el orden de los hilos de colores al pon
 * Norma T568A: Blanco/Verde, Verde, Blanco/Naranja, Azul, Blanco/Azul, Naranja, Blanco/Marrón, Marrón.
 * Norma T568B: Blanco/Naranja, Naranja, Blanco/Verde, Azul, Blanco/Azul, Verde, Blanco/Marrón, Marrón.
 * Cable Directo (Straight-through): Mismo estándar en ambos extremos (A-A o B-B). Se usa para conectar dispositivos de distinto tipo (PC a Switch).
-* Cable Cruzado (Crossover): Un extremo con norma A y el otro con norma B. Se usa para conectar dispositivos del mismo tipo (PC a PC, Switch a Switch). _Nota: Hoy en día la función Auto-MDIX en los switches hace esta conmutación automáticamente._
+* Cable Cruzado (Crossover): Un extremo con norma A y el otro con norma B. Se usa para conectar dispositivos del mismo tipo (PC a PC, Switch a Switch). Nota: Hoy en día la función Auto-MDIX en los switches hace esta conmutación automáticamente.
 
 ### ¿Qué son los pares de cables?
 
