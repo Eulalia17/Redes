@@ -166,3 +166,47 @@ Mayor inmunidad al&#x20;ruido
 
 ## UTP – FTP – STP
 
+### Cableado
+
+De menor a mayor tolerancia al ruido\
+De menor a mayor rigidez
+
+UTP\
+• Más utilizado por su coste&#x20;bajo\
+• Sin blindaje\
+• Muy flexible
+
+<figure><img src="../../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+
+\
+FTP\
+• Precio medio\
+• Blindaje externo\
+• Usa RJ45
+
+\
+STP\
+• Precio alto\
+• Blindaje de cada trenza\
+• Usado en servidores
+
+<figure><img src="../../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+
+\
+SFTP/SSTP\
+• Precio caro\
+• Blindaje individual y global\
+• Difícil de instalar\
+• Requiere de toma de tierra
+
+<figure><img src="../../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+
+
+
+### Conectores RJ45
+
+RJ45- Conector de 8 pines usado en redes\
+RJ11- Conector de 4 pines antiguo usado en telefonía y ADSL
+
+<figure><img src="../../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+
