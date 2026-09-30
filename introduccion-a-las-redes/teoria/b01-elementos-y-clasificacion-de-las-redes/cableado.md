@@ -222,7 +222,36 @@ RJ11- Conector de 4 pines antiguo usado en telefonía y ADSL
 
 ## Conectores RJ45 – EIA/TIA 568 A y B
 
-Cables de red directos – Cada extremo utiliza un estándar igual (T568A a T568A o T568B a T568B.) El cable directo conecta dos dispositivos diferentes entre sí, como por ejemplo un PC y un switch. Cables cruzados
+El cable directo conecta&#x20;dos dispositivos&#x20;diferentes entre sí, como&#x20;por ejemplo un PC y un&#x20;switch.
 
-* Cada extremo utiliza un estándar diferente (uno será 568A y el otro 568B) Un cable cruzado se utiliza para conectar dos dispositivos del mismo tipo, como por ejemplo un PC a una PC o un switch a otro switch.
+Un cable cruzado se&#x20;utiliza para conectar dos&#x20;dispositivos del mismo&#x20;tipo, como por ejemplo&#x20;un PC a una PC o un&#x20;switch a otro switch.
 
+Cables de&#x20;red directos–Cada&#x20;extremo&#x20;utiliza un&#x20;estándar&#x20;igual&#x20;(T568A a&#x20;T568A o&#x20;T568B a&#x20;T568B.)
+
+Cables cruzados-Cada extremo utiliza un estándar diferente (uno será 568A y el otro 568B)
+
+Más info:&#x20;
+
+{% embed url="https://www.fs.com/es/blog/t568a-vs-t568b-difference-between-straight-through-and-crossover-cable-4762.html" %}
+
+<figure><img src="../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+
+
+
+## Links
+
+{% embed url="https://www.profesionalreview.com/2019/02/15/fibra-optica-que-es/" %}
+
+
+
+## Cable de cobre - Coaxial
+
+Coaxial\
+Hilo de cobre recubierto por&#x20;varios componentes una cubierta&#x20;externa para evitar&#x20;daños físicos\
+una malla de&#x20;cobre que lo&#x20;envuelve&#x20;un aislamiento de&#x20;plástico flexible.
+
+pag:26

@@ -11,3 +11,7 @@ Redes de ASIX. Cuando nos dirigimos a las carpetas nos salen las diferentes acti
 Una introducción a las redes es el estudio de cómo se conectan los dispositivos electrónicos para compartir información, programas y recursos físicos.
 
 <figure><img src=".gitbook/assets/images.jpg" alt=""><figcaption></figcaption></figure>
+
+
+
+{% embed url="https://ccnadesdecero.es/" %}
