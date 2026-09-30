@@ -222,3 +222,7 @@ RJ11- Conector de 4 pines antiguo usado en telefonía y ADSL
 
 ## Conectores RJ45 – EIA/TIA 568 A y B
 
+Cables de red directos – Cada extremo utiliza un estándar igual (T568A a T568A o T568B a T568B.) El cable directo conecta dos dispositivos diferentes entre sí, como por ejemplo un PC y un switch. Cables cruzados
+
+* Cada extremo utiliza un estándar diferente (uno será 568A y el otro 568B) Un cable cruzado se utiliza para conectar dos dispositivos del mismo tipo, como por ejemplo un PC a una PC o un switch a otro switch.
+
