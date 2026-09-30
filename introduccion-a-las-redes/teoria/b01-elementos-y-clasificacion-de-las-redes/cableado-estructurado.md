@@ -19,4 +19,26 @@ Ampliable. Las conexiones de nuevos sistemas terminales se hacen desde un punto 
 Flexible. Se pueden incorporar nuevos servicios, sin que interfieran con los antiguos.\
 Barato. En comparación con otros sistemas. Una vez realizada una instalación, cualquier ampliación no&#x20;representa un coste adicional elevado y las actualizaciones no aumentan este coste.
 
-cap 5
+
+
+### Ventajas del cableado estrucutrado
+
+Facilidad de:
+
+1. Ampliar para incluir servicios nuevos.
+2. Cambiar su estructura inicial.
+3. Mantenimiento tanto de las pequeñas modificaciones como de la implantación de nuevos sistemas y tecnologias. En la búsqueda de averías y la solución, ya que la mayor pueden localizar desde uno de los puntos de centralización.
+
+foto de la pagina 6
+
+foto de la pagina 7
+
+
+
+## Subistemas del cableado
+
+El cableado estructurado se divide en subsistemas que tienen funciones especificas:
+
+* Sistema vertical: Formdo por todos los elementos necesario para enlazar los distribuidores de planta de un edificio.
+* Sistema de cableado horizontal: Formaado por todos los elementos que permiten la conexión de los puestos de trabajo en el distribuidor de planta. Este subsistema puede existir o no, dependiendo, de la naturaleza y las dimensiones del sistema de cableado que se quiera instalar.
+* pag:9
