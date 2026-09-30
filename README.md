@@ -14,4 +14,12 @@ Una introducción a las redes es el estudio de cómo se conectan los dispositivo
 
 
 
+Interesante:
+
 {% embed url="https://ccnadesdecero.es/" %}
+
+
+
+Gitbook de la tutura Alina 🫡:
+
+{% embed url="https://punkymo.gitbook.io/miwiki" %}
