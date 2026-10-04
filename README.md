@@ -23,3 +23,17 @@ Interesante:
 Gitbook de la tutura Alina 🫡:
 
 {% embed url="https://punkymo.gitbook.io/miwiki" %}
+
+
+
+Mis sitios webs:
+
+{% embed url="https://apuntes-de-natasha.gitbook.io/asix" %}
+
+{% embed url="https://tally.so/forms/pblbp1/share" %}
+
+{% embed url="https://eu1.make.com/organization/9184433/dashboard" %}
+
+{% embed url="https://app.notion.com/library/teamspaces?spaceId=d8dab57f890c81419df400034602cab7" %}
+
+{% embed url="https://github.com/" %}

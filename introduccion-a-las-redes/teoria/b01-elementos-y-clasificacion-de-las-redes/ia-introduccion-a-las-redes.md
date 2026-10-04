@@ -172,29 +172,7 @@ ASIX MP0370: Planificació i Administració de Xarxes
 
 ### Cuestionario de Autoevaluación Rápida
 
-Ponte a prueba antes del examen formal de red.
-
-Puntuación: 0/3
-
-1\. ¿En qué capa del modelo de referencia opera la dirección MAC grabada en la tarjeta NIC?
-
-A) Capa 3 - Red
-
-B) Capa 2 - Enlace de Datos
-
-2\. ¿Qué entidad de la jerarquía de Internet se encuentra en la cima y no paga por el tránsito de datos?
-
-A) ISP Tier 1
-
-B) ISP Tier 3
-
-3\. ¿Qué ocurre si cambiamos de ubicación y nos conectamos a otra red WiFi?
-
-A) Cambia la dirección MAC pero la IP permanece igual.
-
-B) Cambia la dirección IP lógica, mientras que la MAC física se mantiene intacta.
-
-
+{% embed url="https://tally.so/r/pblbp1" %}
 
 ### Reto de Laboratorio Adicional (Para profundizar en Packet Tracer / CLI)
 
