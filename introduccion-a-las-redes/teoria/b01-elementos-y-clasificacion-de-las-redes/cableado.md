@@ -103,7 +103,7 @@ Existen varios estándares pero&#x20;el que más se utiliza es el&#x20;estánd
 
 Las normas de cableado&#x20;estructurado definen como se&#x20;deben instalar las redes en&#x20;edificios y van desde los cables,&#x20;conectores y demás elementos&#x20;para asegurar la instalación&#x20;óptima y libre de fallos
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ### UTP – T568
 
