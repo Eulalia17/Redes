@@ -41,4 +41,8 @@ El cableado estructurado se divide en subsistemas que tienen funciones especific
 
 * Sistema vertical: Formdo por todos los elementos necesario para enlazar los distribuidores de planta de un edificio.
 * Sistema de cableado horizontal: Formaado por todos los elementos que permiten la conexión de los puestos de trabajo en el distribuidor de planta. Este subsistema puede existir o no, dependiendo, de la naturaleza y las dimensiones del sistema de cableado que se quiera instalar.
-* pag:9
+
+
+
+<sup>Subsistemas del cableado estructurado</sup>
+
