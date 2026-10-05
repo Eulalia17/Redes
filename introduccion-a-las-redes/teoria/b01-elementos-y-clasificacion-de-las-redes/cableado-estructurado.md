@@ -115,4 +115,69 @@ Se pueden ubicar en estos canales los mecanismos como las rosetas de&#x20;conex
 
 
 
-pagina: 17
+## Armario o rack
+
+De altura variable.\
+Depende de la&#x20;cantidad de hardware&#x20;que deseemos&#x20;albergar&#x20;(servidor, SAI, Router,&#x20;matriz de discos,&#x20;unidades para copias&#x20;de seguridad).\
+Permiten guardar&#x20;también el teclado y el&#x20;monitor del servidor.
+
+La altura debe contar con la suma en&#x20;unidades de los equipos a instalar más el&#x20;espacio dedicado a paneles de gestión del&#x20;cableado y siempre que sea posible dejar&#x20;un espacio libre extra del 25% para futuras&#x20;ampliaciones o modificaciones.\
+Por conseguir mayor limpieza y salida del&#x20;calor.\
+Si no conocemos los equipos que se van a&#x20;instalar, y siempre que no haya&#x20;limitaciones de altura, la recomendación&#x20;general es elegir un rack alto, esto es de&#x20;42U en general, que es la medida más\
+utilizada.
+
+<figure><img src="../../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+
+
+
+## Cuarto de comunicaciones
+
+Área física destinada al&#x20;alojamiento de los&#x20;elementos que&#x20;conforman el sistema&#x20;de telecomunicaciones.\
+Se encuentran&#x20;conmutadores y todos&#x20;los elementos&#x20;centralizados que&#x20;corren a través de\
+tramos horizontales&#x20;hasta el área de\
+trabajo.\
+La complejidad de su&#x20;montaje es la mayor&#x20;de toda la red.\
+Cada planta del edificio&#x20;debe contar con una&#x20;habitación de este tipo.
+
+Temperatura ambiente debe encontrarse entre 18 y 24 °C\
+La humedad entre 30% y 50%.\
+Debe encontrarse en un lugar sin riesgo de inundación o en contacto con agua.\
+En caso de haber riesgo de ingreso de agua, se debe proporcionar drenaje de&#x20;piso.\
+No puede compartir espacio con instalaciones eléctricas que no estén&#x20;relacionadas con las telecomunicaciones.
+
+
+
+## Rosetas y tomas de usuarios
+
+Tienen forma de caja en las que se encuentra el&#x20;jack (dispositivo usado para conectar redes de&#x20;cableado estructurado)\
+Se colocan en la pared
+
+<figure><img src="../../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+
+
+
+## Etiquetado de los cables
+
+Importante realizar el correcto etiquetado de los cables&#x20;en sus extremos.\
+Identificar cada PC y cada toma de conexión y usar la&#x20;misma nomenclatura para los cables que se conectan&#x20;a ella, tanto en el extremo de la toma como en el otro.\
+El etiquetado depende de nosotros o de la política de&#x20;nuestra empresa.
+
+En general:\
+Rojo: la red de Wi-Fi y DMZ.\
+Blanco: teléfono analógico.\
+Amarillo: panel de parcheo (entre el interruptor y el panel de conexiones).\
+Azul: servidores.\
+Verde: interconexiones de switch.\
+Naranja: telecomunicaciones\
+Negro: copia de seguridad
+
+<figure><img src="../../../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
+
+
+
+## LINKS
+
+{% embed url="https://www.rackonline.es/content/como-elegir-un-armario-rack" %}
+
+{% embed url="https://youtu.be/j38p9n-Lclo?si=kzWjJeVw0ZWJpIEH" %}
+

@@ -12,6 +12,7 @@
     * [Elementos clasificación](introduccion-a-las-redes/teoria/b01-elementos-y-clasificacion-de-las-redes/elementos-clasificacion.md)
     * [Cableado](introduccion-a-las-redes/teoria/b01-elementos-y-clasificacion-de-las-redes/cableado.md)
     * [Cableado estructurado](introduccion-a-las-redes/teoria/b01-elementos-y-clasificacion-de-las-redes/cableado-estructurado.md)
+    * [Topología-clasificación-transmisión-estándares](introduccion-a-las-redes/teoria/b01-elementos-y-clasificacion-de-las-redes/topologia-clasificacion-transmision-estandares.md)
   * [🐢 Apuntes Kirby](introduccion-a-las-redes/teoria/apuntes-kirby.md)
 * [🧑‍💻 Actividad](introduccion-a-las-redes/actividad/README.md)
   * [🦎 Actividad 0 - Introducción](introduccion-a-las-redes/actividad/actividad-0-introduccion.md)
