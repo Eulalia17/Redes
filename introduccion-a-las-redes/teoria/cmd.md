@@ -6,6 +6,10 @@ icon: sidebar
 
 ipconfig /all | more
 
+foto
+
+
+
 VMware que es
 
 VMware que tipo 1 o 2
@@ -41,7 +45,7 @@ IP - Priv: Port ⇒ IP - Pub: Port
 
 
 
-A.B.C.D ⇒&#x20;
+A.B.C.D ⇒  Rangos privados
 
 &#x20;192.168.0.0 ⇒ 192.168.255.255
 
@@ -53,4 +57,65 @@ A.B.C.D ⇒&#x20;
 
 
 
-Que es el apipa
+Que es el apipa&#x20;
+
+A:0-17
+
+B: 128-191
+
+C: 192-223
+
+D: 224-239
+
+
+
+127.0.0.1 ⇒ Loopback&#x20;
+
+
+
+Que es Loopback
+
+Que ip tiene Loopback
+
+
+
+ping 127.0.0.1
+
+foto
+
+ping localhost
+
+foto
+
+
+
+132.144.37.2&#x20;
+
+¿que clase pertecene ? a la B
+
+255.255.0.0&#x20;
+
+
+
+192.168.111.46
+
+| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+| --- | -- | -- | -- | - | - | - | - |
+| 1   | 1  | 0  | 0  | 0 | 0 | 0 | 0 |
+| 1   | 0  | 1  | 0  | 1 | 0 | 0 | 0 |
+| 0   | 1  | 1  | 1  | 1 | 0 | 0 | 1 |
+|     |    |    |    |   |   |   |   |
+
+CAFE
+
+C ⇒ 1100
+
+A ⇒ 1010&#x20;
+
+F ⇒ 1111
+
+E ⇒ 1110
+
+
+
+700
