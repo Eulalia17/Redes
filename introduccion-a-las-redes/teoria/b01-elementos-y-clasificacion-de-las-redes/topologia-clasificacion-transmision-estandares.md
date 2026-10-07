@@ -85,3 +85,74 @@ En entornos de empresa más grandes, podemos encontrar una variación de las&#x
 
 
 
+### Topología - MALLA
+
+Es una variante de la topología de estrella que permite la interconexión creando conexiones redundadas. En ella, un nodo no tiene que conectarse únicamente a un concentrador, sino que puede hacerlo a más de uno. Esta topología puede ser:
+
+* de malla completa si todos los nodos (los concentradores) se conectan con todos los nodos
+* de malla parcial si los concentradores se conectan con otros concentradores, pero no con todos los concentradores de la topología. De esta manera, se simplifica el diseño, se abaratan los costes y se proporciona un nivel de tolerancia ante fallos de red que puede ser aceptable para la organización.
+
+<figure><img src="../../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
+
+
+
+## Clasificación de las redes
+
+Propiedad privada\
+Conecta enlaces de una única oficina,&#x20;edificio o campus\
+Tamaño limitado a varios Km\
+Compartición de recursos (hardware,&#x20;software, datos)\
+Topología: bus, anillo, estrella
+
+<figure><img src="../../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
+
+Propiedad pública o privada
+
+Conecta enlaces dentro de una ciudad
+
+Red única (TV cable) o formada por la interconexión de múltiples LAN
+
+<figure><img src="../../../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
+
+Propiedad pública o privada\
+Transmisión de datos a larga distancia (voz, vídeo,&#x20;imágenes, multimedia)\
+Grandes áreas geográficas
+
+<figure><img src="../../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
+
+La difusión o broadcast\
+Transmisión de información de un nodo&#x20;emisor a una multitud de nodos receptores&#x20;de manera simultánea.\
+Útil en caso de:
+
+*  Cuando el nodo emisor no conoce cual es el nodo destinatario como el  &#x20;descubrimiento automático de servicios en una red.
+* Cuando el nodo emisor necesita enviar la misma información a múltiples  &#x20;receptores.
+* Es el caso de la videoconferencia y el streaming.
+
+<figure><img src="../../../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
+
+### REDES PUNTO A PUNTO & CONMUTACIÓN
+
+Equipos que se conectan directamente a través de una&#x20;línea de transmisión.\
+Muy sencillas, pero de coste elevado.\
+Pueden utilizarse en:\
+Pequeñas redes de telefonía&#x20;privadas\
+Sistemas en los que es&#x20;imprescindible que no falle la&#x20;comunicación\
+Poco prácticas
+
+<figure><img src="../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
+
+pag: 20
