@@ -29,11 +29,11 @@ Facilidad de:
 2. Cambiar su estructura inicial.
 3. Mantenimiento tanto de las pequeñas modificaciones como de la implantación de nuevos sistemas y tecnologias. En la búsqueda de averías y la solución, ya que la mayor pueden localizar desde uno de los puntos de centralización.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Subistemas del cableado
 
@@ -89,11 +89,11 @@ Estas conexiones se llaman enlaces permanentes, y&#x20;suelen estar fijadas a l
 
 
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
