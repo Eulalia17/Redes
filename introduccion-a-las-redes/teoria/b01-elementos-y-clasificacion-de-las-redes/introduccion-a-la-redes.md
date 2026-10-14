@@ -42,11 +42,8 @@ Algunos vides:\
 ### &#xD;¿Protocolos?
 
 • Sistema de reglas que permiten la comunicación entre entidades de un sistema y&#x20;transmiten la información por medio de cualquier tipo de variación de una magnitud&#x20;física.\
-• Conjunto de normas que permite la comunicación entre los equipos,\
-estableciendo la forma de identificación de éstos en la red, la forma de transmisión&#x20;de los datos y la forma en que la información debe procesarse.\
+• Conjunto de normas que permite la comunicación entre los equipos,&#x20;estableciendo la forma de identificación de éstos en la red, la forma de transmisión&#x20;de los datos y la forma en que la información debe procesarse.\
 • Son las reglas o el estándar que define la sintaxis, semántica y sincronización de&#x20;la comunicación, así como también los posibles métodos de recuperación de&#x20;errores.
-
-
 
 ## Entonces ¿Qué es Internet?
 
@@ -55,11 +52,8 @@ estableciendo la forma de identificación de éstos en la red, la forma de trans
 Es un conjunto descentralizado de redes interconectadas a través de un&#x20;conjunto de protocolos denominado TCP/IP.\
 La RAE lo define como “la red informática mundial, descentralizada y formada por&#x20;la conexión directa entre equipos mediante un protocolo especial de&#x20;comunicación”.\
 En inglés es Interconnected Networks.\
-Se caracteriza porque permite el intercambio y el acceso libres a la\
-información sin barreras de tiempo y espacio.\
+Se caracteriza porque permite el intercambio y el acceso libres a la&#x20;información sin barreras de tiempo y espacio.\
 Ha propiciado cierta democratización, puesto que da acceso a una gran cantidad&#x20;de datos a un coste relativamente bajo o incluso gratis si se utilizan los recursos&#x20;disponibles en muchos organismos públicos.
-
-
 
 ### ¿Y qué más?
 
@@ -68,23 +62,17 @@ No se controla de manera centralizada ni política ni tecnológicamente hablando
 El impacto que tiene en la sociedad va más allá de toda su infraestructura&#x20;tecnológica de cables y equipamiento, es un fenómeno global de nuestra época&#x20;que ha trascendido en lo social, lo económico, lo político y lo cultural.\
 Incluso, cuando hablamos de la NUBE tenemos que hablar de una compleja&#x20;infraestructura de equipos, dispositivos, aplicaciones, y un largo etcétera que&#x20;controlan las diferentes partes del todo para brindar los servicios que utilizamos.
 
-
-
 ### Desde 1969 …
 
 Esto era Internet en el año&#x20;1969\.
 
 <figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
-
-
 ### Hasta el 2023 …
 
 Esto es Internet ahora
 
 <figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ### Backbone o la columna vertebral de Internet
 
@@ -93,20 +81,14 @@ El término sirve para referirse a las grandes redes que se interconectan entre 
 Los proveedores troncales proporcionan instalaciones de conexión en muchas&#x20;ciudades para sus clientes, y se conectan con otros proveedores troncales en los&#x20;llamados IXP (Internet Exchange Point) o punto neutro.\
 Está formada por entidades comerciales, militares, educativas y gubernamentales.
 
-
-
 ### Backbone – ISP – TIER - IXP
 
 Proveedores de servicios de Internet (ISP): Organizaciones que brindan conectividad a Internet a usuarios y&#x20;empresas. Conectan sus redes a la infraestructura central de Internet.\
 Puntos de acceso a la red (NAP): Ubicaciones físicas donde varios ISP intercambian tráfico. Sirven como&#x20;uniones críticas en la red troncal de Internet.\
-TIER 1 o Proveedores de red de nivel 1:Son ISP de nivel 1 que tienen redes extensas y se conectan&#x20;directamente a todo Internet. No pagan a otros ISP por el tránsito y se les considera en la cima de la jerarquía\
-de Internet.\
+TIER 1 o Proveedores de red de nivel 1:Son ISP de nivel 1 que tienen redes extensas y se conectan&#x20;directamente a todo Internet. No pagan a otros ISP por el tránsito y se les considera en la cima de la jerarquía&#x20;de Internet.\
 Ejemplo de ISP de nivel 1 incluyen AT\&T, Verizon y Nivel 3 (ahora CenturyLink).\
-Puntos de intercambio de Internet (IXP): Instalaciones donde los ISP y otros operadores de red&#x20;intercambian tráfico directamente. Ayudan a reducir la latencia y el costo asociado con el envío de datos a\
-través de redes de larga distancia.\
+Puntos de intercambio de Internet (IXP): Instalaciones donde los ISP y otros operadores de red&#x20;intercambian tráfico directamente. Ayudan a reducir la latencia y el costo asociado con el envío de datos a&#x20;través de redes de larga distancia.\
 Ejemplo: DE-CIX (Alemania), AMS-IX (Países Bajos) y LINX (Reino Unido
-
-
 
 ### Evolución de las redes
 
@@ -139,8 +121,6 @@ Ejemplo: DE-CIX (Alemania), AMS-IX (Países Bajos) y LINX (Reino Unido
 2010\
 2020
 
-
-
 ### Hosts
 
 Si queremos formar parte de una comunidad global en línea, nuestro PC, tablet o&#x20;teléfono debe estar conectado a una red.\
@@ -154,16 +134,12 @@ Una dirección IP identifica el host que participa en una comunicación y la red
 
 <figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
-
-
 ### NIC – Tarjetas de red
 
 La tarjeta de red o NIC o Network Interface Card es un dispositivo electrónico que&#x20;conecta directamente con el medio físico y realiza el intercambio de datos ya sea&#x20;por cable o por medios inalámbricos.\
 Este dispositivo tiene una dirección única denominada MAC según su fabricante\
 La diferencia básica entre la dirección MAC y la dirección IP es que una dirección&#x20;MAC identifica de forma única un dispositivo que desea participar en una red.\
 Por otro lado, una dirección IP define de manera única la conexión de una red con&#x20;la interfaz de un dispositivo.
-
-
 
 ### Servidores
 
@@ -180,8 +156,6 @@ Ejemplos de servidores:&#x20;
 * Servidor Web – El servidor ejecuta el software de servicio web (apache, nginx) y los  &#x20;clientes utilizan un navegador (Firefox, Chrome, Opera) para acceder a las páginas  &#x20;web de ese servidor.
 * Servidor de Archivos – El servidor de archivos almacena archivos en una cierta  &#x20;ubicación. Los clientes pueden acceder a esos archivos con el explorador de archivos  &#x20;de Windows, por ejemplo.
 
-
-
 ### Redes peer to peer – P2P
 
 El software de cliente y servidor generalmente se ejecuta en ordenadores&#x20;separados, pero también es posible usar un ordenador para ambos roles al mismo&#x20;tiempo.\
@@ -189,8 +163,6 @@ En pequeñas empresas y hogares, muchos ordenadores funcionan como&#x20;servido
 Este tipo de red se llama red peer-to-peer o red de pares.
 
 <figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ### P2P – ventajas y desventajas
 
@@ -205,8 +177,6 @@ DESVENTAJAS:\
 • No son seguras\
 • No son escalables\
 • Todos los dispositivos pueden actuar como&#x20;clientes y servidores, lo que puede ralentizar su&#x20;rendimiento.
-
-
 
 ### Dispositivos intermedios
 
@@ -223,8 +193,6 @@ Algunas funciones de los dispositivos intermedios son:\
 &#x20;   • Clasificar y dirigir los mensajes según las prioridades QoS (Calidad del Servicio)\
 &#x20;   • Permitir o denegar el flujo de datos de acuerdo a los parámetros de seguridad. –&#x20;por ejemplo, los Firewalls
 
-
-
 ### Medios de red
 
 La comunicación a través de una red es transportada por un medio.
@@ -234,8 +202,7 @@ El medio proporciona el canal por el cual viaja el mensaje desde el origen hasta
 <figure><img src="../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 Tipos de Medios\
-• Hilos metálicos (cobre) dentro de&#x20;cables: los datos se codifican en\
-impulsos eléctricos.\
+• Hilos metálicos (cobre) dentro de&#x20;cables: los datos se codifican en&#x20;impulsos eléctricos.\
 • Fibras de vidrio o plástico (óptica): los&#x20;datos se codifican como pulsos de luz.\
 • Transmisión inalámbrica: los datos se&#x20;codifican con longitudes de onda del&#x20;espectro electromagnético.
 
@@ -259,8 +226,6 @@ Medios inalámbricos\
 • Wi-Max (IEEE 802.16)\
 • Zigbee (IEEE 802.15.4)\
 • Wireless PAN (802.15)
-
-
 
 ### Topología
 

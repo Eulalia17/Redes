@@ -16,8 +16,6 @@ icon: alien
 * Dispositivos Intermedios y Medios
 * Arquitectura Backbone & Tier ISP
 
-
-
 ### 1. La Comunicación y la Necesidad de las Redes
 
 Fundamentos teóricos de la transmisión de datos y elementos de la comunicación.
@@ -28,11 +26,11 @@ Modo Didáctico Estándar Activado: Explicaciones directas, ejemplos prácticos 
 
 Al igual que la comunicación humana requiere un emisor, un receptor, un canal y un lenguaje común, las redes de computadores aplican exactamente la misma estructura técnica para mover bits entre dispositivos.
 
-Emisor (Fuente)Dispositivo host que genera e inicia el envío del mensaje (Ej. PC de origen).Receptor (Destino)Dispositivo host final que recibe e interpreta el mensaje enviado.Código (Protocolo)Conjunto de reglas sintácticas y semánticas compartidas (TCP/IP).Canal (Medio)Soporte físico o inalámbrico por donde viaja la señal (UTP, Fibra, Aire).**Ejemplo en llamada de emergencia (112):** Carlos (Emisor) transmite voz codificada por telefonía (Canal) mediante protocolo de audio al operador (Receptor) en un contexto crítico.
+Emisor (Fuente)Dispositivo host que genera e inicia el envío del mensaje (Ej. PC de origen). Receptor (Destino) Dispositivo host final que recibe e interpreta el mensaje enviado. Código (Protocolo) Conjunto de reglas sintácticas y semánticas compartidas (TCP/IP). Canal (Medio) Soporte físico o inalámbrico por donde viaja la señal (UTP, Fibra, Aire). **Ejemplo en llamada de emergencia (112):** Carlos (Emisor) transmite voz codificada por telefonía (Canal) mediante protocolo de audio al operador (Receptor) en un contexto crítico.
 
 #### Esquema: Red Local Doméstica (LAN)
 
-192.168.0.0/24\[ Conexión WAN / Internet ]│Router Inalámbrico / Gateway (192.168.0.1)WiFi (Inalámbrico)Smartphone: 192.168.0.11Laptop: 192.168.0.12Ethernet (Cable UTP)PC-01: 192.168.0.14PC-02: 192.168.0.15
+192.168.0.0/24\[ Conexión WAN / Internet ]│Router Inalámbrico / Gateway (192.168.0.1)WiFi (Inalámbrico) Smartphone: 192.168.0.11Laptop: 192.168.0.12Ethernet (Cable UTP) PC-01: 192.168.0.14PC-02: 192.168.0.15
 
 &#x20;**Punto clave:** Todos los dispositivos locales pertenecen a la misma subred interna, saliendo al exterior mediante la dirección IP Pública configurada en la interfaz WAN del router.
 
@@ -53,8 +51,6 @@ Red global de **servidores remotos** interconectados que funcionan como un ecosi
 Conjunto de **normas y estándares** que definen la sintaxis, semántica y sincronización para que los equipos entiendan la información.
 
 **Anatomía:** Establece el formato de datos, la identificación de origen/destino y los métodos de recuperación de errores.
-
-
 
 ### 2. Dispositivos, Direccionamiento e Interacción
 
@@ -87,17 +83,19 @@ Todos los equipos (pares) pueden actuar simultáneamente como clientes y servido
 
 Ventajas
 
-* • Fácil configuración
-* • Menor coste inicial
-* • Sin punto único de fallo
+Fácil configuración
+
+Menor coste inicial
+
+Sin punto único de fallo
 
 Desventajas
 
-* • Sin administración central
-* • Baja seguridad
-* • No es escalable
+Sin administración central
 
+Baja seguridad
 
+No es escalable
 
 ### 3. Componentes de Infraestructura y Transmisión
 
@@ -143,8 +141,6 @@ Tier 3 (Acceso Final): ISP locales que venden conectividad directa al cliente fi
 
 IXP / NAP (Puntos Neutros): Puntos físicos de intercambio directo de tráfico entre redes (Ej: DE-CIX, LINX, CATNIX).
 
-
-
 ### 4. Evolución Histórica de las Redes de Computadores.
 
 Principales hitos tecnológicos desde la conmutación de paquetes hasta la era moderna.
@@ -154,8 +150,6 @@ Principales hitos tecnológicos desde la conmutación de paquetes hasta la era m
 * 84  : 1984-85  . Cisco & Sistema DNS
 * 91  : 1991  . WWW & HTML (Berners-Lee)
 * 03  : 2003+  . Estándar IPv6 & Nube
-
-
 
 ### 5. Objetivos de Aprendizaje, Autoevaluación y Reto Práctico
 
@@ -167,8 +161,6 @@ ASIX MP0370: Planificació i Administració de Xarxes
 
 * Analizar la arquitectura de redes identificando la jerarquía de protocolos (TCP/IP y OSI).
 * Integrar equipos en redes gestionando direccionamiento lógico (IPv4/IPv6) y servicios de red esenciales.
-
-
 
 ### Cuestionario de Autoevaluación Rápida
 

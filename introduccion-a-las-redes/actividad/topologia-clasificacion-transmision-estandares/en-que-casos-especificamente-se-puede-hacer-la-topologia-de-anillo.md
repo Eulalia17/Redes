@@ -4,7 +4,7 @@ icon: circle-dashed
 
 # EN QUE CASOS ESPECIFICAMENTE SE PUEDE HACER LA TOPOLOGÍA DE ANILLO
 
-<figure><img src="../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
 
 La topología de anillo se puede utilizar específicamente en escenarios donde se requiere una transmisión de datos ordenada, sin colisiones y en redes de tamaño pequeño a mediano que no cambian de configuración constantemente. A continuación, se detallan los casos y entornos específicos donde su implementación es ideal o históricamente necesaria:
 

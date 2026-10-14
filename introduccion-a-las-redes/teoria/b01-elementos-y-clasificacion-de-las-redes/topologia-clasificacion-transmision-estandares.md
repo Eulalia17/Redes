@@ -6,12 +6,19 @@ icon: standard-definition
 
 <figure><img src="../../../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
 
+Local: LAN
 
+Metropolitana: MAN
+
+Nacional: WAN
+
+CAN
+
+<figure><img src="../../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
 
 ## Arquitectura de la red
 
-Especifica la forma en que los dispositivos se envían los datos de unos a otros sin tener en\
-cuenta cómo están dispuestos los medios físicos por los que se transmite la información.
+Especifica la forma en que los dispositivos se envían los datos de unos a otros sin tener en&#x20;cuenta cómo están dispuestos los medios físicos por los que se transmite la información.
 
 <figure><img src="../../../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
 
@@ -22,15 +29,11 @@ Medios no guiados (red&#x20;inalámbrica por infrarrojos,&#x20;radio, microond
 
 Protocolos de comunicación: Las reglas&#x20;utilizadas&#x20;para llevar a&#x20;cabo la&#x20;comunicación
 
-
-
 ## Topología de red
 
 Mapa que representa el diseño de red que&#x20;queremos representar. Se utilizan dos tipos de&#x20;diagramas\
 Diagrama de topología física&#x20;brinda información sobre cómo y dónde&#x20;están ubicados y conectados nuestros&#x20;equipos de red, tanto los dispositivos&#x20;finales, como los intermedios\
 Diagrama de la topología lógica&#x20;muestra las direcciones de red de los&#x20;equipos, los servicios que proporciona,&#x20;etc.
-
-
 
 ## Topología física
 
@@ -63,8 +66,6 @@ Esta topología de red, aunque&#x20;desfasada al día de hoy para&#x20;interco
 
 <figure><img src="../../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
 
-
-
 ### Topología - ANILLO
 
 Es similar a una topología de&#x20;bus en la que interconectamos&#x20;los dos extremos formando un&#x20;anillo en el cableado.\
@@ -72,8 +73,6 @@ Este tipo de redes era muy&#x20;utilizado por algunas&#x20;tecnologías como l
 Hoy día se ha relegado su uso&#x20;a otros propósitos, como la&#x20;interconexión de campus de&#x20;empresa en redes de anillo&#x20;de fibra óptica de alto&#x20;rendimiento.
 
 <figure><img src="../../../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ### Topología - ESTRELLA
 
@@ -83,8 +82,6 @@ En entornos de empresa más grandes, podemos encontrar una variación de las&#x
 
 <figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
-
-
 ### Topología - MALLA
 
 Es una variante de la topología de estrella que permite la interconexión creando conexiones redundadas. En ella, un nodo no tiene que conectarse únicamente a un concentrador, sino que puede hacerlo a más de uno. Esta topología puede ser:
@@ -93,8 +90,6 @@ Es una variante de la topología de estrella que permite la interconexión crean
 * de malla parcial si los concentradores se conectan con otros concentradores, pero no con todos los concentradores de la topología. De esta manera, se simplifica el diseño, se abaratan los costes y se proporciona un nivel de tolerancia ante fallos de red que puede ser aceptable para la organización.
 
 <figure><img src="../../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ## Clasificación de las redes
 
@@ -164,28 +159,28 @@ Poco prácticas
 <figure><img src="../../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
 
 Conexión a través de nodos de conmutación.\
-⚫ Todos los nodos desempeñan tareas relacionadas con el control de flujo, control&#x20;de la congestión y encaminamiento.\
-⚫ No todos los nodos se conectan entre sí.\
-⚫ No tiene por qué existir un enlace directo entre cada par de nodos, pero si algún&#x20;camino entre ellos.\
-⚫ Los nodos no se preocupan del contenido de lo que han de encaminar, sólo se&#x20;preocupan de dar un servicio, de que la información se transmita correctamente, no&#x20;de su interpretación.
+Todos los nodos desempeñan tareas relacionadas con el control de flujo, control&#x20;de la congestión y encaminamiento.\
+No todos los nodos se conectan entre sí.\
+No tiene por qué existir un enlace directo entre cada par de nodos, pero si algún&#x20;camino entre ellos.\
+Los nodos no se preocupan del contenido de lo que han de encaminar, sólo se&#x20;preocupan de dar un servicio, de que la información se transmita correctamente, no&#x20;de su interpretación.
 
 ### Clasificación de las redes CONMUTACIÓN DE CIRCUITOS
 
 Establecimiento del circuito\
-⚫ Antes de transmitir una señal, se debe establecer un circuito extremo a extremo&#x20;desde el origen al destino, pasando por todos los nodos intermedios.\
-⚫ Sirve para reservar todos los recursos necesarios para la comunicación,&#x20;durante la duración de la misma.\
-⚫ Transferencia de información\
-⚫ Una vez se ha establecido el circuito, la información se puede transmitir, sin sufrir&#x20;retardos entre los nodos.\
-⚫ Desconexión\
-⚫ Durante esta última fase se liberan todos los recursos reservados para la conexión.\
-⚫ El camino debe estar disponible durante toda la comunicación y se desactiva una vez&#x20;finalizada ésta.
+Antes de transmitir una señal, se debe establecer un circuito extremo a extremo&#x20;desde el origen al destino, pasando por todos los nodos intermedios.\
+Sirve para reservar todos los recursos necesarios para la comunicación,&#x20;durante la duración de la misma.\
+Transferencia de información\
+Una vez se ha establecido el circuito, la información se puede transmitir, sin sufrir&#x20;retardos entre los nodos.\
+Desconexión\
+Durante esta última fase se liberan todos los recursos reservados para la conexión.\
+El camino debe estar disponible durante toda la comunicación y se desactiva una vez&#x20;finalizada ésta.
 
 Poco eficiente: la capacidad del canal se reserva&#x20;permanentemente durante toda la duración de la\
 conexión.\
-• Sistema resulta poco flexible, ya que se debe&#x20;transmitir de forma continua y a una velocidad&#x20;constante.\
-• La comunicación sufre un retardo mientras se&#x20;establece el circuito.\
-• El retardo introducido por cada nodo del camino, en&#x20;la fase de transferencia se considera despreciable.\
-• No existen mecanismos de control de flujo. Los&#x20;equipos origen y destino deben transmitir a la misma&#x20;velocidad.
+Sistema resulta poco flexible, ya que se debe&#x20;transmitir de forma continua y a una velocidad&#x20;constante.\
+La comunicación sufre un retardo mientras se&#x20;establece el circuito.\
+El retardo introducido por cada nodo del camino, en&#x20;la fase de transferencia se considera despreciable.\
+No existen mecanismos de control de flujo. Los&#x20;equipos origen y destino deben transmitir a la misma&#x20;velocidad.
 
 Transparencia, ya que, una vez que&#x20;el circuito se ha establecido, la red se&#x20;comporta como si fuese una conexión&#x20;directa entre los dos extremos.
 
@@ -197,10 +192,10 @@ REDES DE&#x20;CONMUTACIÓN:&#x20;Conexión a través de nodos de conmutación
 ## Internet
 
 Internet es una red por la que podemos interconectar otras redes con un&#x20;ámbito global.\
-• Entre los servicios que encontramos están:\
-• las páginas web,\
-• el correo electrónico,\
-• la mensajería instantánea.
+Entre los servicios que encontramos están:\
+las páginas web,\
+el correo electrónico,\
+la mensajería instantánea.
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -246,9 +241,9 @@ En la comunicación entre dos personas se necesitan tres componentes
 Se necesita además, que ambos hablen el mismo idioma.\
 De no ser así, es necesario un intérprete que les sirva de intermediario.
 
-En el mundo de las comunicaciones informáticas, el mecanismo es exactamente igual.\
-También hará falta un idioma común. Es más, harán falta varios idiomas comunes para que\
-los dos equipos puedan comunicarse.
+En el mundo de las comunicaciones informáticas, el mecanismo es exactamente igual.
+
+También hará falta un idioma común. Es más, harán falta varios idiomas comunes para que&#x20;los dos equipos puedan comunicarse.
 
 <figure><img src="../../../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
 
@@ -268,8 +263,7 @@ En la red, si queremos establecer una comunicación entre dos equipos informáti
 ## Un protocolo de red debe definir
 
 Codificación del mensaje: cuando enviamos un texto o una imagen, el equipo solo puede utilizar&#x20;ceros y unos para codificar la información.\
-Formateado y encapsulación del mensaje: según el protocolo utilizado, los datos se estructurarán de\
-modo que determinen la información necesaria para que el protocolo pueda procesarla.\
+Formateado y encapsulación del mensaje: según el protocolo utilizado, los datos se estructurarán de&#x20;modo que determinen la información necesaria para que el protocolo pueda procesarla.\
 Definición del tamaño del mensaje: ha de tener un tamaño predefinido, tanto en tamaño máximo\
 como en mínimo.\
 Tiempos de entrega de los mensajes: la latencia que puede soportar la entrega de un mensaje es\
@@ -284,9 +278,11 @@ un mensaje de apertura o de cierre puede permitir que una comunicación se estab
 
 Debemos diferenciar varios tipos de comunicaciones:
 
-* Unicast: la comunicación es de uno a uno. Un equipo habla y otro equipo escucha.
-* Multicast: la comunicación es de uno a muchos. Un equipo habla, y todos aquellos que se hayan asociado al grupo de multicast escucharán la comunicación. El resto de los equipos no lo escucharán o, si lo escuchan, ignorarán el mensaje.
-* Broadcast: un equipo habla y todos los equipos de esa red escuchan. Este tipo de comunicación resulta muy útil cuando se quiere localizar cierta información que, de antemano, no se sabe quién tiene.
+Unicast: la comunicación es de uno a uno. Un equipo habla y otro equipo escucha.
+
+Multicast: la comunicación es de uno a muchos. Un equipo habla, y todos aquellos que se hayan asociado al grupo de multicast escucharán la comunicación. El resto de los equipos no lo escucharán o, si lo escuchan, ignorarán el mensaje.
+
+Broadcast: un equipo habla y todos los equipos de esa red escuchan. Este tipo de comunicación resulta muy útil cuando se quiere localizar cierta información que, de antemano, no se sabe quién tiene.
 
 ## Protocolo de red
 
@@ -294,12 +290,17 @@ Debemos diferenciar varios tipos de comunicaciones:
 
 Debe tener una o varias funciones que permitan:
 
-* Controlar el direccionamiento de quién envía y a quién va dirigido el mensaje.
-* Proporcionar algún mecanismo que garantice la entrega del mensaje.
-* Segmentar la información para simplificar el envío si es necesario y secuenciarla para poder reensamblarla al llegar al destino.
-* Controlar el flujo de envío del mensaje.
-* Detectar posibles errores durante el envío.
-* Presentar algún tipo de interfaz para que el usuario o un servicio pueda interactuar con el protocolo.
+Controlar el direccionamiento de quién envía y a quién va dirigido el mensaje.
+
+Proporcionar algún mecanismo que garantice la entrega del mensaje.
+
+Segmentar la información para simplificar el envío si es necesario y secuenciarla para poder reensamblarla al llegar al destino.
+
+Controlar el flujo de envío del mensaje.
+
+Detectar posibles errores durante el envío.
+
+Presentar algún tipo de interfaz para que el usuario o un servicio pueda interactuar con el protocolo.
 
 Los protocolos de red se especializan&#x20;en determinadas funciones dentro de&#x20;la comunicación, pero no controlan&#x20;todo el proceso de envío
 

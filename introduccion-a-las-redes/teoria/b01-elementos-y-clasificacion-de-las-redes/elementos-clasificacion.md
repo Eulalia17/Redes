@@ -6,8 +6,7 @@ icon: wreath-laurel
 
 ## Elementos de una red
 
-Dispositivos finales: PC, teléfono móvil,&#x20;televisor inteligente,&#x20;relojes que registran los&#x20;recorridos que hacemos&#x20;cuando salimos a hacer\
-deporte.
+Dispositivos finales: PC, teléfono móvil,&#x20;televisor inteligente,&#x20;relojes que registran los&#x20;recorridos que hacemos&#x20;cuando salimos a hacer&#x20;deporte.
 
 Dispositivos&#x20;intermedios: Routers, firewalls,&#x20;switches, IDS, puntos de\
 acceso inalámbricos, etc.
@@ -16,8 +15,6 @@ Medios de red: Cables de cobre, fibra&#x20;óptica, conexiones&#x20;inalámbr
 
 * Guiados&#x20;
 * No Guiados
-
-
 
 ## Medios de transmisión
 
@@ -29,8 +26,6 @@ La naturaleza del medio junto&#x20;con la señal a transmitir&#x20;constituyen
 * Fiabilidad en la  &#x20;transmisión
 * Coste
 * Facilidad de la  &#x20;instalación
-
-
 
 ## Clasificación de las redes
 
@@ -102,8 +97,6 @@ Pueden dar cobertura a países\
 Internet\
 Tamaño grande
 
-
-
 ### PAN | WPAN
 
 Permiten intercambio de datos entre móviles, portátiles.\
@@ -122,8 +115,6 @@ Mantener los dispositivos actualizados con las últimas versiones de firmware pe
 Puesto que tienen un alcance limitado, es menos probable que un atacante externo acceda a la&#x20;red sin estar físicamente cerca de los dispositivos. Sin embargo, sé precavido en entornos&#x20;públicos.\
 Fundamental saber gestionar el acceso a dispositivos. Esto es, autorizar únicamente a los&#x20;dispositivos de confianza para conectarse y revocar el acceso aquellos no deseados.\
 Se debe realizar seguimiento de las actividades y mantener registros para ayudar a&#x20;identificar actividad sospechosa o no autorizada.
-
-
 
 ### LAN | WLAN
 
