@@ -16,6 +16,7 @@
   * [cmd](introduccion-a-las-redes/teoria/cmd.md)
   * [🐢 Apuntes Kirby](introduccion-a-las-redes/teoria/apuntes-kirby.md)
   * [19-10-2026](introduccion-a-las-redes/teoria/19-10-2026.md)
+  * [Direcciones IPv4 vs IPv6](introduccion-a-las-redes/teoria/direcciones-ipv4-vs-ipv6.md)
 * [🧑‍💻 Actividad](introduccion-a-las-redes/actividad/README.md)
   * [🦎 Actividad 0 - Introducción](introduccion-a-las-redes/actividad/actividad-0-introduccion.md)
   * [🤖 Actividad 1 - M0370B0A1](introduccion-a-las-redes/actividad/actividad-1-m0370b0a1.md)
