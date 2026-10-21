@@ -41,3 +41,5 @@ Mis sitios webs 🐢:
 {% embed url="https://app.notion.com/library/teamspaces?spaceId=d8dab57f890c81419df400034602cab7" %}
 
 {% embed url="https://github.com/" %}
+
+{% embed url="https://academia.openwebinars.net/" %}
