@@ -12,116 +12,160 @@ El protocolo IPv4 utiliza direcciones de **32 bits**, divididas en 4 octetos (8 
 
 ### Direccionamiento con Clases
 
-| Clase | Binario Inicial | Rango (1er Octeto)          | Máscara por Defecto |
-| ----- | --------------- | --------------------------- | ------------------- |
-| A     | 0xxx xxxx       | 0.0.0.0 a 127.255.255.255   | 255.0.0.0 (/8)      |
-| B     | 10xx xxxx       | 128.0.0.0 a 191.255.255.255 | 255.255.0.0 (/16)   |
-| C     | 110x xxxx       | 192.0.0.0 a 223.255.255.255 | 255.255.255.0 (/24) |
-| D     | 1110 xxxx       | 224.0.0.0 a 239.255.255.255 | Multicast           |
+| Clase | Binario Inicial | Rango (1er Octeto)          | Máscara por Defecto    |
+| ----- | --------------- | --------------------------- | ---------------------- |
+| A     | 0xxx xxxx       | 0.0.0.0 a 127.255.255.255   | 255.0.0.0 (/8)         |
+| B     | 10xx xxxx       | 128.0.0.0 a 191.255.255.255 | 255.255.0.0 (/16)      |
+| C     | 110x xxxx       | 192.0.0.0 a 223.255.255.255 | 255.255.255.0 (/24)    |
+| D     | 1110 xxxx       | 224.0.0.0 a 239.255.255.255 | Multicast              |
+| E     | 1111 xxxx       | 240.0.0.0 a 255.255.255.255 | Reservada/experimental |
 
 ### Direcciones Privadas vs Públicas
 
-Las IP privadas no son enrutables en Internet. Requieren de **NAT** (Network Address Translation) en el router para salir al exterior. Los rangos privados son:
+Las IP privadas no son enrutables en Internet. Normalmente, el router utiliza **NAT** (Network Address Translation) para que varios equipos con direcciones privadas puedan acceder al exterior usando una o varias direcciones públicas. Los rangos privados son:
 
-* **Clase A:** 10.0.0.0 /8
-* **Clase B:** 172.16.0.0 /12 (hasta 172.31.255.255)
-* **Clase C:** 192.168.0.0 /16 (hasta 192.168.255.255)
+* **10.0.0.0/8:** de 10.0.0.0 a 10.255.255.255.
+* **172.16.0.0/12:** de 172.16.0.0 a 172.31.255.255.
+* **192.168.0.0/16:** de 192.168.0.0 a 192.168.255.255.
 
-**Concepto Avanzado (ASIX): VLSM y Sumarización**
+Una dirección pública puede ser enrutable en Internet; una privada se utiliza dentro de redes locales. No basta con mirar la clase para decidir si una IP es privada: hay que comprobar si pertenece a uno de los rangos privados definidos.
 
-El direccionamiento sin clase (CIDR) abandona las máscaras por defecto. \*\*VLSM\*\* (Máscaras de longitud variable) permite subdividir redes optimizando el espacio de direcciones, evitando el desperdicio del 50% o más que suele darse con subredes clásicas. La \*\*sumarización\*\* agrupa rutas contiguas reduciendo el tamaño de las tablas de enrutamiento.
+**Concepto avanzado (ASIX): VLSM y sumarización.** CIDR permite representar redes con un prefijo de longitud variable. VLSM permite dividir una red en subredes de tamaños diferentes para aprovechar mejor las direcciones. La sumarización agrupa varios prefijos contiguos en una ruta más amplia y reduce el tamaño de las tablas de enrutamiento.
 
-### El Protocolo IPv6
+### El protocolo IPv6
 
-Debido al agotamiento de direcciones IPv4, IPv6 proporciona direcciones de **128 bits** (340 sextillones de IPs). Se escriben en 8 bloques de 16 bits en formato hexadecimal, separados por dos puntos (`:`).
+IPv6 se diseñó, entre otros motivos, para resolver la escasez de direcciones IPv4. Utiliza direcciones de **128 bits**, escritas como ocho bloques hexadecimales de 16 bits separados por dos puntos. Un ejemplo completo es `2001:0db8:0000:0000:0000:ff00:0042:8329`.
 
-### Reglas de Simplificación
+### Reglas de simplificación IPv6
 
-* **Ceros iniciales:** Se pueden omitir los ceros a la izquierda en un bloque.\
-  `0138` -> `138`
-* **Compresión de ceros (::):** Un grupo consecutivo de bloques compuestos solo por ceros puede sustituirse por `::`. **Solo se puede usar una vez por dirección.**\
-  Ejemplo: `2001:0db8:0000:0000:0000:0000:1428:57ab` -> `2001:db8::1428:57ab`
+* **Omitir ceros iniciales:** en cada bloque se pueden quitar los ceros situados a la izquierda. Por ejemplo, `0db8` se escribe `db8`.
+* **Comprimir bloques de ceros:** una secuencia consecutiva de bloques `0000` se puede sustituir por `::`, pero solo una vez en una dirección. Por ejemplo, `2001:0db8:0000:0000:0000:ff00:0042:8329` se puede escribir `2001:db8::ff00:42:8329`.
+* No se deben usar dos compresiones `::` en una misma dirección, porque no se podría saber cuántos bloques se han omitido.
 
-### Tipos de Direcciones IPv6
+### Tipos importantes de direcciones IPv6
 
-**Unicast Global (GUA)**
+* **Unicast global:** normalmente dentro de `2000::/3`; se puede enrutar globalmente cuando está asignada y configurada correctamente.
+* **Link-local:** dentro de `FE80::/10`; se utiliza en el enlace local y no se enruta a otras redes. Las interfaces IPv6 suelen disponer de una dirección de este tipo.
+* **Unique Local Address (ULA):** dentro de `FC00::/7`, habitualmente con prefijos `FD`; se usa para comunicaciones privadas internas.
+* **Multicast:** dentro de `FF00::/8`; envía tráfico a un grupo de interfaces. IPv6 no utiliza broadcast como IPv4.
+* **Anycast:** una misma dirección se asigna a varias interfaces y el enrutamiento entrega el tráfico a una de ellas, normalmente la más cercana según las rutas.
 
-Equivalentes a las IP públicas de IPv4. Son enrutables en Internet. Actualmente comienzan en el rango **2000::/3** (el primer dígito hexadecimal es 2 o 3).
+## Resolución de direcciones: ARP y NDP
 
-**Link-Local (LLA)**
+En una red Ethernet, el equipo necesita la dirección MAC del destino local o de la puerta de enlace para construir la trama. IPv4 e IPv6 resuelven esta relación de formas diferentes.
 
-Usadas para comunicación dentro de la misma red LAN. No son enrutables. Obligatorias en toda interfaz IPv6. Comienzan por **FE80::/10**.
+### IPv4: ARP
 
-**Unicast Local Única (ULA)**
+ARP (Address Resolution Protocol) permite averiguar qué dirección MAC corresponde a una IPv4 de la red local.
 
-Equivalentes a las IP privadas. Enrutables internamente en la empresa, pero no en Internet. Comienzan por **FC00::/7** (prácticamente FD).
+1. El equipo envía una solicitud ARP mediante broadcast preguntando quién utiliza la IPv4 buscada.
+2. El dispositivo propietario responde con su dirección MAC, normalmente mediante un mensaje unicast.
+3. El emisor guarda temporalmente la asociación en su caché ARP.
 
-**Multicast y Anycast**
+En Windows, `arp -a` muestra la tabla ARP. El comando `arp -d *` intenta eliminar las entradas de la caché y puede requerir permisos elevados.
 
-IPv6 elimina el Broadcast. El **Multicast** comienza por **FF00::/8** (ej. FF02::1 a todos los nodos). **Anycast** asigna la misma IP a múltiples equipos, enrutando al más cercano
+### IPv6: NDP
 
-## Resolución de Direcciones (Capa 2 a Capa 3)
+NDP (Neighbor Discovery Protocol) funciona mediante mensajes ICMPv6 y multicast, sin broadcast. Incluye Neighbor Solicitation (NS) y Neighbor Advertisement (NA), que ayudan a descubrir vecinos y sus direcciones de enlace. En Windows se puede consultar la tabla de vecinos con `netsh interface ipv6 show neighbors`.
 
-Para enviar una trama Ethernet en una red LAN, el equipo emisor necesita conocer la dirección MAC (Capa 2) del equipo de destino o de la puerta de enlace. El mecanismo difiere totalmente entre IPv4 e IPv6.
+## Asignación automática: DHCPv4, SLAAC y DHCPv6
 
-### IPv4: Protocolo ARP
+### DHCPv4: proceso DORA
 
-Address Resolution Protocol utiliza mensajes **Broadcast** para descubrir direcciones MAC.
+1. **Discover:** el cliente busca un servidor DHCP.
+2. **Offer:** el servidor ofrece una dirección y parámetros de configuración.
+3. **Request:** el cliente solicita la oferta elegida.
+4. **Acknowledge:** el servidor confirma la concesión.
 
-* **ARP Request (Broadcast):** "¿Quién tiene la IP 192.168.1.10? Dime tu MAC." Destino MAC: `FF:FF:FF:FF:FF:FF`
-* **ARP Reply (Unicast):** "Yo tengo la 192.168.1.10 y mi MAC es AA:BB:CC:..."
-* Comandos: `arp -a` (ver tabla en Windows). `arp -d *` (borrar tabla).
+Los parámetros pueden incluir máscara, puerta de enlace, DNS y duración de la concesión. Si el servidor DHCP está en otra subred, normalmente se configura un agente relay en el router.
 
-### IPv6: Protocolo NDP (ICMPv6)
+### IPv6: SLAAC y DHCPv6
 
-Neighbor Discovery Protocol elimina el Broadcast y usa mensajes **Multicast de ICMPv6**.
+Los routers anuncian información de red mediante Router Advertisement (RA). Las banderas del RA ayudan a indicar cómo debe obtener el equipo la dirección y otros parámetros:
 
-* **Neighbor Solicitation (NS):** Solicitud multicast pidiendo la MAC de un vecino. Usa dirección Multicast de nodo solicitado.
-* **Neighbor Advertisement (NA):** Respuesta Unicast con la MAC.
-* Comandos: `netsh interface ipv6 show neighbors` (Windows).
+* **SLAAC:** el host forma su dirección usando el prefijo anunciado y un identificador de interfaz generado por el sistema. No necesita que DHCPv6 le asigne la dirección.
+* **SLAAC + DHCPv6 sin estado:** SLAAC configura la dirección y DHCPv6 puede proporcionar otros parámetros, como DNS.
+* **DHCPv6 con estado:** el servidor DHCPv6 asigna y registra direcciones y parámetros; el router sigue anunciando la información necesaria para alcanzar otras redes.
 
-## Asignación de Direcciones IP
-
-### DHCPv4 (IPv4)
-
-El proceso de concesión DORA (Discover, Offer, Request, Acknowledge):
-
-1. **DHCPDISCOVER (Broadcast):** El cliente busca un servidor.
-2. **DHCPOFFER (Unicast):** El servidor ofrece una IP del Pool.
-3. **DHCPREQUEST (Broadcast):** El cliente acepta la IP (informa a los demás servidores para que liberen ofertas).
-4. **DHCPACK (Unicast):** El servidor confirma la concesión.
-
-\* Nota: Si el DHCP está en otra red, el router debe configurarse como **Relay Agent** (`ip helper-address` en Cisco).
-
-### Asignación Dinámica en IPv6
-
-En IPv6 los hosts localizan el router enviando un **Router Solicitation (RS)**. El router responde con un **Router Advertisement (RA)** usando banderas (Flags A, O, M) para indicar cómo autoconfigurarse:
-
-**1. SLAAC**
-
-Stateless Address Autoconfiguration. No usa servidor DHCP.
-
-`A=1, O=0, M=0`
-
-El host usa el prefijo de red del Router (RA) y genera su host ID (aleatorio o **EUI-64** a partir de su MAC).
-
-**2. SLAAC + DHCPv6**
-
-DHCPv6 "Sin Estado".
-
-`A=1, O=1, M=0`
-
-SLAAC da IP y Gateway. El DHCPv6 entrega otros parámetros (DNS, Dominio).
-
-**3. DHCPv6 (Stateful)**
-
-Similar a DHCPv4.
-
-`A=0, O=0, M=1`
-
-El router solo da el Gateway. Todo el resto de la IP e info la da el DHCPv6 central.
+La interpretación exacta de las banderas debe comprobarse en el RA recibido y en la configuración de la red; no debe suponerse que todos los equipos usan el mismo método.
 
 ## Herramienta de Diagnóstico IPv4
 
 Introduce una dirección IPv4 para analizar su clase, máscara por defecto, y determinar si es pública, privada, loopback o reservada. Excelente para comprobaciones en el módulo de **Xarxes Locals (0225)**.
 
+## Material desarrollado del PDF: interpretación del diagnóstico IPv4
+
+La segunda página del PDF muestra un ejemplo de la herramienta con la dirección **191.16.45.51**. El resultado indicado es **Clase B**, máscara por defecto **255.255.0.0 (/16)** y tipo de red **pública**. También muestra el primer octeto en binario: `10111111`.
+
+### 1. Cómo se analiza una IPv4
+
+Una dirección IPv4 contiene cuatro octetos separados por puntos. Cada octeto debe ser un número entre 0 y 255. Para analizarla:
+
+1. Comprueba que hay exactamente cuatro octetos y que cada uno está dentro del rango válido.
+2. Identifica el primer octeto para clasificar la dirección según el esquema tradicional por clases.
+3. Consulta la máscara o el prefijo para distinguir la parte de red de la parte de host. La clase por sí sola no determina la subred real cuando se utiliza CIDR.
+4. Comprueba si la dirección pertenece a un rango especial, como privado, loopback o reservado.
+5. Interpreta el resultado teniendo en cuenta la configuración real de la interfaz, la máscara y la puerta de enlace.
+
+### 2. Ejemplo del PDF: 191.16.45.51
+
+| Campo                          | Resultado del ejemplo | Interpretación                                                            |
+| ------------------------------ | --------------------- | ------------------------------------------------------------------------- |
+| Dirección introducida          | `191.16.45.51`        | IPv4 válida: cuatro octetos.                                              |
+| Clase principal                | Clase B               | El primer octeto, 191, está en el rango tradicional de Clase B (128–191). |
+| Máscara por defecto (classful) | `255.255.0.0` (`/16`) | En el esquema por clases, los dos primeros octetos corresponden a la red. |
+| Tipo de red                    | Pública               | No pertenece a los rangos privados IPv4 habituales.                       |
+| Primer octeto en binario       | `10111111`            | Es la representación binaria de 191.                                      |
+
+**Importante:** `/16` es la máscara por defecto histórica de la Clase B, no necesariamente la máscara configurada en un equipo real. En redes modernas se utiliza CIDR, por lo que hay que conocer el prefijo configurado para calcular correctamente la red, el broadcast y los hosts disponibles.
+
+### 3. Rangos especiales que conviene reconocer
+
+| Uso             | Rango o dirección                                   | Para qué sirve                                                                     |
+| --------------- | --------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Privada         | `10.0.0.0/8`                                        | Direccionamiento interno de redes.                                                 |
+| Privada         | `172.16.0.0/12`                                     | Direccionamiento interno de redes.                                                 |
+| Privada         | `192.168.0.0/16`                                    | Direccionamiento interno de redes.                                                 |
+| Loopback        | `127.0.0.0/8` (por ejemplo, `127.0.0.1`)            | Pruebas del propio equipo; el tráfico no se envía a la LAN.                        |
+| Link-local IPv4 | `169.254.0.0/16`                                    | Puede aparecer cuando un equipo no consigue una concesión DHCP y se autoconfigura. |
+| Multicast       | `224.0.0.0/4`                                       | Comunicación dirigida a grupos.                                                    |
+| Documentación   | `192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24` | Direcciones reservadas para ejemplos y documentación.                              |
+
+### 4. Comprobaciones prácticas en Windows
+
+Abre la terminal o CMD y utiliza estos comandos:
+
+* `ipconfig`: muestra la configuración IP básica.
+* `ipconfig /all`: muestra detalles de la interfaz, DHCP, DNS y dirección física.
+* `ping 192.168.1.1`: comprueba si hay respuesta desde una dirección indicada; sustituye la IP por la que quieras probar.
+* `arp -a`: muestra las asociaciones IPv4–MAC aprendidas.
+* `tracert 8.8.8.8`: muestra los saltos de la ruta hacia un destino, si la red permite esas respuestas.
+
+Una respuesta correcta al ping no garantiza que todos los servicios funcionen; y la ausencia de respuesta no demuestra por sí sola que el equipo esté apagado, ya que un cortafuegos puede bloquear ICMP.
+
+### 5. Actividad de comprobación
+
+Analiza cada dirección con la herramienta y explica el resultado. La clasificación por clases es histórica; cuando se proporciona una máscara o un prefijo, utiliza ese dato para determinar la red real.
+
+| Dirección de ejemplo | Qué debes comprobar                                                                            |
+| -------------------- | ---------------------------------------------------------------------------------------------- |
+| `192.168.10.5`       | Si pertenece al rango privado y qué información adicional necesitas para determinar la subred. |
+| `10.20.30.40`        | Qué rango privado contiene la dirección.                                                       |
+| `172.20.5.10`        | Si está dentro del bloque privado `172.16.0.0/12`.                                             |
+| `127.0.0.1`          | Por qué es una dirección loopback.                                                             |
+| `169.254.10.20`      | Qué puede indicar una dirección link-local IPv4 en un equipo cliente.                          |
+| `191.16.45.51`       | Reproduce el ejemplo del PDF: clase tradicional, máscara por defecto y tipo de dirección.      |
+
+### 6. Diferencias clave entre IPv4 e IPv6
+
+| Característica           | IPv4                          | IPv6                                 |
+| ------------------------ | ----------------------------- | ------------------------------------ |
+| Longitud                 | 32 bits                       | 128 bits                             |
+| Representación           | Decimal, cuatro octetos       | Hexadecimal, ocho bloques            |
+| Separador                | Punto (`.`)                   | Dos puntos (`:`)                     |
+| Resolución de vecinos    | ARP                           | NDP mediante ICMPv6                  |
+| Broadcast                | Sí                            | No; utiliza multicast                |
+| Configuración automática | DHCPv4 o configuración manual | SLAAC, DHCPv6 o configuración manual |
+| Espacio de direcciones   | Más limitado                  | Muchísimo mayor                      |
+
+**Conclusión:** la herramienta del PDF sirve como ayuda didáctica para reconocer la notación, la clase tradicional y algunos rangos especiales IPv4. Para diagnosticar una red real, contrasta siempre el resultado con la máscara/prefijo configurado, la puerta de enlace, las rutas y la conectividad.
