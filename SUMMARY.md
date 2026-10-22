@@ -15,7 +15,7 @@
     * [Topología-clasificación-transmisión-estándares](introduccion-a-las-redes/teoria/b01-elementos-y-clasificacion-de-las-redes/topologia-clasificacion-transmision-estandares.md)
   * [cmd](introduccion-a-las-redes/teoria/cmd.md)
   * [🐢 Apuntes Kirby](introduccion-a-las-redes/teoria/apuntes-kirby.md)
-  * [19-10-2026](introduccion-a-las-redes/teoria/19-10-2026.md)
+  * [🌐 19-10-2026](introduccion-a-las-redes/teoria/19-10-2026.md)
   * [Direcciones IPv4 vs IPv6](introduccion-a-las-redes/teoria/direcciones-ipv4-vs-ipv6.md)
   * [CISCO](introduccion-a-las-redes/teoria/cisco.md)
 * [🧑‍💻 Actividad](introduccion-a-las-redes/actividad/README.md)

@@ -2,6 +2,7 @@
 description: >-
   fundamentos de Redes: IPv4 e IPv6 Módulos: SMX (0225) y ASIX (0370) - Material
   Didáctico
+icon: sidebar-flip
 ---
 
 # Direcciones IPv4 vs IPv6

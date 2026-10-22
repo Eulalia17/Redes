@@ -1,3 +1,7 @@
+---
+icon: badge-percent
+---
+
 # CISCO
 
 CPT ⇒ Simula
