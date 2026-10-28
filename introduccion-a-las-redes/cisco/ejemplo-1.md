@@ -16,6 +16,8 @@
 
 64 - Linux
 
+Que quiere decir la consola en la terminal de cisco
+
 
 
 ### Comandos en router
