@@ -32,3 +32,5 @@
 * [Laboratorio](introduccion-a-las-redes/laboratorio/README.md)
   * [👩‍🔧 El Detrás de Escenas de Nuestro Servidor y Servidores de Red](introduccion-a-las-redes/laboratorio/el-detras-de-escenas-de-nuestro-servidor-y-servidores-de-red.md)
   * [28-10-2026](introduccion-a-las-redes/laboratorio/28-10-2026.md)
+* [Cisco](introduccion-a-las-redes/cisco/README.md)
+  * [Ejemplo 1](introduccion-a-las-redes/cisco/ejemplo-1.md)
