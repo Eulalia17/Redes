@@ -30,3 +30,4 @@
     * [Mask-Bin-#Host-Rep.Red-Rep.Host-Privada](introduccion-a-las-redes/actividad/topologia-clasificacion-transmision-estandares/mask-bin-host-rep.red-rep.host-privada.md)
 * [Laboratorio](introduccion-a-las-redes/laboratorio/README.md)
   * [👩‍🔧 El Detrás de Escenas de Nuestro Servidor y Servidores de Red](introduccion-a-las-redes/laboratorio/el-detras-de-escenas-de-nuestro-servidor-y-servidores-de-red.md)
+  * [28-10-2026](introduccion-a-las-redes/laboratorio/28-10-2026.md)
