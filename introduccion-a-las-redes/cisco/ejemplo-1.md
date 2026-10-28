@@ -88,3 +88,9 @@ Cap 10:
 
 <figure><img src="../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
 
+
+
+## que aplicacion para entornos de linux conectarme
+
+{% embed url="https://www.google.com/search?sca_esv=767ad3e31fd2009c&rlz=1C1GCEB_enES1207ES1207&sxsrf=APpeQnsUNKQO-mQfmpZcYcO0Na8zOKsPuA:1793190125244&q=que+aplicacion+para+entornos+de+linux+conectarme&source=lnms&fbs=ABfTbFUDadgeu2mn4mYJ8iEZ1GUDJDV1iLQMLM4xjzQsUrZDWQ6g9DeOTl7q7sMm0TIK6aiw0C6PZR0kMYLJH9DHWRCxjmuWcqgc8_f-BrZY5ZkgH1kEP-SQfSlGRsj5FEhH2XnFHMScI-YvxV2LPcKelmbqmyLruy3gbDCEXys0-wyVYPllAmHMMUAuQK29tnF5P1aKImJ8&sa=X&ved=2ahUKEwii3bfj2dyXAxUvh_0HHcL7FgMQ0pQJegQIDRAB&biw=958&bih=910&dpr=1" %}
+
