@@ -43,3 +43,5 @@ Mis sitios webs 🐢:
 {% embed url="https://github.com/" %}
 
 {% embed url="https://academia.openwebinars.net/" %}
+
+{% embed url="https://www.netacad.com/launch?id=b520f66f-df02-47b2-b474-3b5709b0ca01&tab=curriculum&view=13ca36f2-a92d-5c78-a344-5c54183065b5" %}
