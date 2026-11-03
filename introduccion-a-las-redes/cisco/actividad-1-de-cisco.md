@@ -21,7 +21,7 @@ Para cada actividad se entrega:
 
 ## Practicas:
 
-**Práctica 1 - Cableado y conectividad**
+### **Práctica 1 - Cableado y conectividad**
 
 Objetivo: Comprender y familiarizarse con el funcionamiento de la herramienta Cisco Packet Tracer, explorando las diferencias entre el modo lógico (esquemas de red) y el modo físico (representación real de armarios de cableado, ciudades y dispositivos), así como realizar conexiones de red, administración de equipos y configuraciones básicas de dispositivos.
 
@@ -40,3 +40,65 @@ Conocer el entorn de cisco packet tracer: A diferenciar y alternar fluidamente e
 Manipular el entorno físico de la red: A interactuar con elementos tangibles dentro del simulador, tales como abrir armarios de cableado, arrastrar dispositivos hacia los _racks_, manipular interruptores de encendido traseros y seleccionar adecuadamente los medios de transmisión físicos.
 
 Investigar dispositivos en un armario de cableado: A interactuar con elementos tangibles dentro del simulador, tales como abrir armarios de cableado, arrastrar dispositivos hacia los _racks_, manipular interruptores de encendido traseros y seleccionar adecuadamente los medios de transmisión físicos.
+
+### **Practica 2 - Configuraciones básicas**
+
+Objetivo de la actividad:
+
+Qué se ha hecho:
+
+Qué has aprendido:
+
+Conocer el entorno de cisco packet tracer:
+
+Manipular el entorno fisico de la red:
+
+Investigar dispositivos en un armario de cableado:
+
+
+
+### **Práctica 3 - Representación de la red**
+
+Objetivo de la actividad:
+
+Qué se ha hecho:
+
+Qué has aprendido:
+
+Conocer el entorno de cisco packet tracer:
+
+Manipular el entorno fisico de la red:
+
+Investigar dispositivos en un armario de cableado:
+
+
+
+### **Práctica 4 - Configuraciones iniciales en switch**
+
+Objetivo de la actividad:
+
+Qué se ha hecho:
+
+Qué has aprendido:
+
+Conocer el entorno de cisco packet tracer:
+
+Manipular el entorno fisico de la red:
+
+Investigar dispositivos en un armario de cableado:
+
+
+
+### **Práctica 5 - ARP**
+
+Objetivo de la actividad:
+
+Qué se ha hecho:
+
+Qué has aprendido:
+
+Conocer el entorno de cisco packet tracer:
+
+Manipular el entorno fisico de la red:
+
+Investigar dispositivos en un armario de cableado:
