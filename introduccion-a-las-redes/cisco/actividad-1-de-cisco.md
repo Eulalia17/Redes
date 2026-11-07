@@ -1,3 +1,7 @@
+---
+icon: badge-percent
+---
+
 # Actividad 1 de Cisco
 
 ## **Rúbrica:**
@@ -62,8 +66,6 @@ Para cada actividad se entrega:
 * Conocer el entorno de Cisco Packet Tracer: A interpretar los diferentes niveles jerárquicos de comandos en Cisco IOS (_User EXEC_, _Privileged EXEC_ y _Global Configuration_).
 * Manipular el entorno físico de la red: A comprobar las conexiones de los puertos _Fast Ethernet_ y _Gigabit Ethernet_ en switches Catalyst 2960.
 * Investigar dispositivos en un armario de cableado: A analizar las especificaciones de hardware de los switches (número de interfaces y tipos de memoria) a través de comandos diagnósticos en la CLI.
-
-
 
 
 
