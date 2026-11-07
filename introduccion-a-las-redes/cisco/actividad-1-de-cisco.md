@@ -43,39 +43,48 @@ Investigar dispositivos en un armario de cableado: A interactuar con elementos t
 
 ### **Practica 2 - Configuraciones básicas**
 
-Objetivo de la actividad:
+Objetivo de la actividad: Demostrar y aplicar la capacidad de configurar los parámetros iniciales en una red local pequeña utilizando la interfaz de línea de comandos (CLI) de dispositivos Ciscos IOS.
 
-Qué se ha hecho:
+Qué se ha hecho:&#x20;
 
-Qué has aprendido:
+* Hemos conectado fisicamente los dispositivos terminales (PCs) a los switches mediante cables de consola.&#x20;
+* Hemos configurado los nombres de hosts (Room-145 & Room-146), las contraseñas de acceso seguro de consola y VTY (Teletipo Virtual. Interfaz logico o puerto virtual), la contraseña secreta secreta de habilitación, el cifrado de contraseñas y un mensaje de advertencia MOTD (Mensaje del dia. Un text informativo que se muestra de forma automatica a los usuarios).&#x20;
+* Asignamos direcciones IP a las interfaces virtuales (VLAN 1) de los switches y a las interfaces de red de los equipos hosts.
+* Guardamos la configuración en ejecución en la memoria no volàtil (startup-config).
 
-Conocer el entorno de cisco packet tracer:
+Qué has aprendido: Establecer parámetros básicos de red de capa 2 y capa 3, proteger el acceso a dispositivos de red mediante credenciales cifradas y verificar la conectividad de extremo a extremo.
 
-Manipular el entorno fisico de la red:
+Conocer el entorno de cisco packet tracer: A familizarse con la simulación de redes, la interpretación de tablas de direccionamiento y las herramientas interactivas de evalucación automática (Check Results).
 
-Investigar dispositivos en un armario de cableado:
+Manipular el entorno fisico de la red: Gestinamos las conexiones de cables de red y de consola, asi como a verificar el estado operativo de los puertos (luces indicadoras de enlace).
+
+Investigar dispositivos en un armario de cableado: Examinamos la ubicación y conexión física de los switches y ordenadores dentro de una topología estructurada.
 
 
 
 ### **Práctica 3 - Representación de la red**
 
-Objetivo de la actividad:
+Objetivo de la actividad: Exploramos una version simplificada de una red corporativa para comprender la función y organización de sus componentes.
 
 Qué se ha hecho:
 
-Qué has aprendido:
+* Identificamos las categorías de dispositivos en la barra de herramientas (intermediarios, terminales, medios y conexiones).
+* Analizamos las diferencias funcionales entre redes de àrea local (LAN) y redes àrea amplia (WAN).
+* Realizaron ejercicios de desafío añadiendo dispositivos finales y conectándolos mediante medios de red físicos y logicos.
 
-Conocer el entorno de cisco packet tracer:
+Qué has aprendido:  Distingimos los diferentes tipos de dispositivos que componen una infraestrutura de red global, el modelo cliente-servidor y los criterios de selección de medios de transmisión.
 
-Manipular el entorno fisico de la red:
+Conocer el entorno de cisco packet tracer: Navegamos libremente por una topología compleja y comprender el propósito general de la simulación de redes en entornos formativos.
 
-Investigar dispositivos en un armario de cableado:
+Manipular el entorno fisico de la red: Conectamos de forma lógica y física dispositivos terminales a nodos de red mediante el uso de cables de cables, fibra o conexiones inalambricas.
+
+Investigar dispositivos en un armario de cableado: Exponemos los distintos armarios de telecomunicaciones dentro de una sucursal y reconocer el equipamento montando en racks y mesas.
 
 
 
 ### **Práctica 4 - Configuraciones iniciales en switch**
 
-Objetivo de la actividad:
+Objetivo de la actividad: Realizamos tareas a
 
 Qué se ha hecho:
 
