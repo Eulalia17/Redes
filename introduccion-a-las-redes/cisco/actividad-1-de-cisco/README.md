@@ -15,11 +15,22 @@ icon: badge-percent
 Para cada actividad se entrega:
 
 * el pkt completado correspondiente
-* informe que contiene:
-  * objetivo de la actividad
-  * qué se ha hecho
-  * qué has aprendido
-  * conocer el entorno de cisco packet tracer.
-  * manipular el entorno fisico de la red.
-  * investigar dispositivos en un armario de cableado
+*   informe que contiene:
+
+    * objetivo de la actividad
+    * qué se ha hecho
+    * qué has aprendido
+    * conocer el entorno de cisco packet tracer.
+    * manipular el entorno fisico de la red.
+    * investigar dispositivos en un armario de cableado
+
+
+
+VLAN 1 — Que es?
+
+VTY — Que es?
+
+Consola — Que es? Que cable utiliza? Para que me sirve?
+
+Que tipo de contraseña me genra el enable secret?
 
