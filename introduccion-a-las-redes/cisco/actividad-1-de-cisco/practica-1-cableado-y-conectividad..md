@@ -40,78 +40,50 @@ A auditar de forma práctica el hardware disponible y comprender su despliegue f
 
 
 
-* ## Instrucciones
+* ## Desarrollo Paso a Paso:
 
-### Parte 1: Investigar la Barra de Herramientas Inferior&#x20;
+### **Paso 1: Exploramos  la barra de herramientas**
 
-La barra de herramientas de iconos en la esquina inferior izquierda tiene varias categorías de componentes  de red. Debería ver categorías que corresponden a Dispositivos de Red, Dispositivos Finales, y  Componentes. La cuarta categoría (con el icono del rayo) es Conexiones y representa los medios de red  compatibles con Packet Tracer. Las dos últimas categorías son Miscelánea y Conexión multiusuario.&#x20;
+1. Acceder a la barra de herramientas inferior izquierda.
+2. Identificar las categorías de componentes: Dispositivos de Red, Dispositivos Finales, Componentes, Conexiones, Miscelánea y Conexión Multiusuario.
+3. Explorar las subcategorías de Dispositivos de Red: Routers, Switches, Hubs, Wireless Devices, Security y WAN Emulation.
 
-¿Cuáles son las subcategorías de Dispositivos de Red?
+### **Paso 2: Inspección del Armario de Cableado de la Sucursal**
 
-Las subcategorias de los dispositivos de red en Cisco Packet Tracer:
+1. Seleccionar la vista Physical (Físico) en la barra superior.
+2. Navegar a Intercity Seward Sucursal Armario de Cableado de la Sucursal.
+3. Inspeccionar los elementos físicos: Rack, Tablero de Cables, Mesa y Estante.
+4. Identificar el router y switches montados en el Rack `ALS2.`
+5. Cambiar a modo Logical, para verificar qué dispositivos se conectan inalámbricamente a `Access_Point` y volver a la vista física para ubicar su localización en el plano del edificio.
 
-1. Routers
-2. Switches
-3. Hubs
-4. Wireless Devices
-5. WAN Emulation
-6. Security
+### **Paso 3: Conexión de Dispositivos Finales a la Red**
 
+1. En el Tablero de Cables, seleccionar un cable directo de cobre `Copper Straight-Through.`
+2. Hacer clic en el puerto `FastEthernet0` de la `PC_1` y conectar el otro extremo a un puerto `Fast Ethernet` disponible en el switch `ALS2.`
+3. Seleccionar un cable de `Consola` del Tablero de Cables.
+4. Conectar el extremo `RS232` de la `PC_1` al puerto `Console` del `Edge_Router.`
 
+### **Paso 4: Instalación y Configuración del Router de Respaldo**
 
-### Parte 2: Investigar Dispositivos en un Armario de Cableado&#x20;
+1. Desde el Estante, arrastrar `Backup_Router` a un espacio libre del `Rack.`
+2. Hacer clic en `Backup_Router` Inspeccionar parte trasera y accionar el interruptor de encendido.
+3. Tomar un cable `USB` del Tablero de Cables, conectarlo al puerto de consola `USB` del `Backup_Router` y el otro extremo al puerto `USB` de `Laptop_1.`
+4. En `Laptop_1`, abrir Desktop Terminal, aceptar los parámetros por defecto e ingresar a la `CLI.`
+5. Rechazar el diálogo de configuración inicial y asignar el nombre de host:<br>
 
-a. Si fuiste a explorar, vuelve a modo Físico e Intercity ahora. En la barra azul superior, haga clic en  Físico y, a continuación, utilice los botones Panel de Navegación o Nivel Atrás para desplazarse a  Intercity.&#x20;
+`Router> enable`
 
-b. Haga clic en Seward y, a continuación, haga clic en la Sucursal. &#x20;
+`Router# configure terminal`
 
-c. Haga clic en el Armario de Cableado de la Sucursal. Observe que el armario de cableado tiene un  Rack, un Tablero de Cables, una Mesa y un Estante. El Rack contiene dispositivos que se pueden montar en rack. Si amplía el rack (herramienta de zoom o  Ctrl+rueda de desplazamiento), puede ver que los dispositivos están atornillados (montados) en el rack.  Debajo del dispositivo de distribución de energía, encontrará un router. Los routers conectan redes  diferentes. &#x20;
+`Router(config)# hostname Edge_Router_Backup`
 
-d. Debajo del router hay dos switches. Estos switches proporcionan conexiones por cable para conectarse  a otros dispositivos. Observe que los dispositivos tienen un nombre asignado por el administrador de red.  ¿Qué dispositivos utilizan una conexión por cable para conectarse al switch ALS2?&#x20;
-
-<figure><img src="../../../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
-
-Los dispositivos que utilizan una conexión, podemos observar las conexiones:
-
-* 🛜 Access\_Point (Punto de acceso inalámbrico): Un cable conecta uno de sus puertos directamente al switch ALS2.
-* 🖥️ Web\_Server (Servidor web): Otro cable conecta la interfaz de red del servidor ubicado en la parte inferior del rack hacia el switch ALS2.
-
-e. Debajo de los switches del Rack se encuentra un punto de acceso inalámbrico denominado  Access\_Point. Los puntos de acceso inalámbricos utilizan una conexión inalámbrica para conectarse a  otros dispositivos. Cambie al modo Lógico. ¿Qué dispositivo está conectado a Access\_Point?
-
-<figure><img src="../../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
-
-El ALS2 está conectado en el Access Point.
-
-f. Cambie al modo Físico. Deberías estar de vuelta en el Armario de Cableado de la Sucursal. ¿Dónde  se encuentra físicamente el dispositivo conectado a Access\_Point?
-
-![](<../../../.gitbook/assets/image (141).png>) &#x20;
-
-El Acess Point se encuentra en el Rack.
+`Edge_Router_Backup(config)# end`
 
 
 
-### Parte 3: Conectar Dispositivos Finales a Dispositivos de Red&#x20;
+* ## Preguntas y Cuestionarios Resueltos
 
-Los dispositivos se pueden conectar de varias maneras. Para la conectividad de red, los dispositivos  normalmente se conectan mediante un cable directo de cobre o de forma inalámbrica. Para la conectividad  de administración, los dispositivos normalmente se conectan mediante un cable de consola o un cable USB.&#x20;
-
-Nota: Packet Tracer calificará el resto de esta actividad. En cualquier momento, puede hacer clic en  Comprobar resultados en la parte inferior de la ventana Tareas. A continuación, haga clic en Elementos  de evaluación para ver qué elementos aún no ha completado.&#x20;
-
-a. Investigue el Tablero de Cables. Incluye dos cables de Consola, diez cables directos de cobre, cuatro  cables de Fibra, dos cables Coaxiales y dos cables USB. Observe que las representaciones de cable en  modo Físico son más representativas de sus homólogos del mundo real. Cambie al modo Lógico. Observe que las representaciones de cable son diferentes en este modo.&#x20;
-
-b. Cambie al modo Físico. Haga clic en un cable directo de cobre del Tablero de Cables. &#x20;
-
-c. Mueva el ratón sobre los puertos de PC\_1 hasta que vea la ventana emergente FastEthernet0. El otro puerto RS232 es para conectar cables de Consola.&#x20;
-
-d. Con el cable directo de cobre todavía seleccionado, haga clic en el puerto FastEthernet0 para conectar  el cable. Ahora el puerto debe estar resaltado en verde.&#x20;
-
-e. Conecte el otro extremo del cable al switch ALS2 haciendo clic en un puerto Fast Ethernet vacío. El  cable ahora debería colgar entre la PC\_1 y el puerto de ALS2.&#x20;
-
-f. Las PCs y los portátiles también se pueden conectar a dispositivos de red mediante un cable de consola  o un cable USB. Esta conexión proporciona acceso de administración. Haga clic en un cable de Consola del Tablero de Cables. &#x20;
-
-g. Haga clic en el puerto RS232 en PC\_1. Ahora el puerto debe estar resaltado en verde. &#x20;
-
-h. Pase el ratón sobre el Edge\_Router y busque el puerto de Consola. Puede hacer clic con el botón  derecho en > Inspeccionar Frente para ampliar y facilitar la búsqueda del puerto.&#x20;
-
-i. Haga clic en el puerto de consola en Edge\_Router para conectar el cable de Consola. El cable ahora  debería colgar entre PC\_1 y el puerto de Consola en el Edge\_Router.
-
-<br>
+1. ¿Cuáles son las subcategorías de Dispositivos de Red? Routers, Switches, Hubs, Dispositivos inalámbricos, Dispositivos de seguridad y Emulación WAN.
+2. ¿Qué dispositivos utilizan una conexión por cable para conectarse al switch ALS2?Dispositivos finales como los PCs de escritorio (ej. PC\_1) conectados mediante cables Ethernet directos de cobre a sus puertos Fast Ethernet.
+3. ¿Qué dispositivo está conectado a Access\_Point? Dispositivos finales inalámbricos (como una laptop o tablet con interfaz inalámbrica activada).
+4. ¿Dónde se encuentra físicamente el dispositivo conectado a Access\_Point? En la zona de trabajo / área de oficina de la Sucursal de Seward.
