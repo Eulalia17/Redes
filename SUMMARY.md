@@ -32,6 +32,7 @@
   * [👩‍🔧 El Detrás de Escenas de Nuestro Servidor y Servidores de Red](introduccion-a-las-redes/laboratorio/el-detras-de-escenas-de-nuestro-servidor-y-servidores-de-red.md)
 * [Cisco](introduccion-a-las-redes/cisco/README.md)
   * [Ejemplo 1](introduccion-a-las-redes/cisco/ejemplo-1.md)
+  * [Arquitectura y Especificaciones de Dispositivos de Red.](introduccion-a-las-redes/cisco/arquitectura-y-especificaciones-de-dispositivos-de-red..md)
   * [Actividad 1 de Cisco](introduccion-a-las-redes/cisco/actividad-1-de-cisco/README.md)
     * [Práctica 1 - Cableado y conectividad.](introduccion-a-las-redes/cisco/actividad-1-de-cisco/practica-1-cableado-y-conectividad..md)
     * [Práctica 2 - Configuraciones básicas.](introduccion-a-las-redes/cisco/actividad-1-de-cisco/practica-2-configuraciones-basicas..md)
