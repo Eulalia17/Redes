@@ -70,20 +70,17 @@ Hoy en la hora de redes hemos visto y abierto unos switches por dentro. Tambien 
 
 ### Siwtch:
 
-Siwtch 1.jpg
-
 * Vista trasera del equipo:&#x20;
   * Muestra la parte posterior de un switch gestionable (con chasis violeta, característico de modelos como los switches Extreme Networks de la serie Summit).
 * Componentes visibles:&#x20;
   * Módulos de fuentes de alimentación redundantes extraíbles (PSU) con indicadores LED de estado (`AC OK`, `DC OK`), rejillas de ventilación con ventiladores integrados para refrigeración activa, y una ranura de expansión lateral protegida con una tapa metálica rotulada (`Slot B`).
-* Verificación:&#x20;
-  * Los ventiladores giran y los indicadores LED de alimentación muestran un estado verde operativo (_OK_).
+*   Verificación:&#x20;
 
-foto
+    * Los ventiladores giran y los indicadores LED de alimentación muestran un estado verde operativo (_OK_).
+
+    <figure><img src="../../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
 
 
-
-#### `Siwtch 2.jpg`
 
 * Vista superior con chasis abierto:&#x20;
   * Muestra el interior completo del switch con la cubierta metálica superior retirada.
@@ -92,25 +89,20 @@ foto
 * Verificación:&#x20;
   * El interior está libre de acumulación de polvo y los componentes modulares se encuentran firmemente acoplados a sus zócalos.
 
-foto
+<figure><img src="../../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
 
 
-
-#### 3. `Siwtch 3.jpg`
 
 * Detalle de la placa base (Mainboard):&#x20;
   * Vista en primer plano de los circuitos integrados, procesadores y bancos de memoria de la placa principal.
 * Componentes visibles:&#x20;
   * Circuitos integrados con disipadores, chips de procesamiento (etiquetados con marcas como PMC y circuitos de control), zócalos de expansión, condensadores electrolíticos y conectores internos de cableado plano y de alimentación.
-*   Verificación:&#x20;
+* Verificación:&#x20;
+  * No se aprecian componentes abombados, fugas en los condensadores ni pistas de circuito impreso dañadas o quemadas.
 
-    * No se aprecian componentes abombados, fugas en los condensadores ni pistas de circuito impreso dañadas o quemadas.
-
-    foto
-
+<figure><img src="../../.gitbook/assets/image (153).png" alt=""><figcaption></figcaption></figure>
 
 
-#### 4. `Siwtch 4.jpg`
 
 * Detalle del módulo de puertos y circuitería de capa física:&#x20;
   * Vista de cerca de una tarjeta de interfaz o placa hija (_daughterboard_) conectada mediante buses internos.
@@ -119,11 +111,9 @@ foto
 * Verificación:&#x20;
   * Los conectores de interfaz y los buses de datos están correctamente alineados y sin holguras.
 
-foto
+<figure><img src="../../.gitbook/assets/image (154).png" alt=""><figcaption></figcaption></figure>
 
 
-
-#### 5. `siwtch 5.jpg`
 
 * Detalle de la circuitería de control y reloj en placa:&#x20;
   * Vista cercana de la placa base de un dispositivo Cisco.
@@ -132,11 +122,11 @@ foto
 * Verificación:&#x20;
   * La batería de respaldo CMOS se encuentra correctamente alojada en su soporte y los componentes circundantes están intactos.
 
-foto
+<figure><img src="../../.gitbook/assets/image (155).png" alt=""><figcaption></figcaption></figure>
 
 
 
-#### 6. `Siwtch 6.jpg`
+
 
 * Vista interior de un dispositivo de seguridad/routing (NetScreen):&#x20;
   * Chasis abierto de un dispositivo con la circuitería característica de equipos Juniper/NetScreen.
@@ -145,11 +135,9 @@ foto
 * Verificación:&#x20;
   * El cableado interno de alimentación está ordenado y alejado de los componentes de alta frecuencia para evitar interferencias electromagnéticas.
 
-foto
+<figure><img src="../../.gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
 
 
-
-7\. `Siwtch 7.jpeg`
 
 * Etiqueta de especificaciones y panel de alimentación (NetScreen / Juniper):&#x20;
   * Vista exterior posterior.
@@ -158,11 +146,9 @@ foto
 * Verificación:&#x20;
   * El interruptor responde al accionamiento mecánico y el fusible de protección está debidamente alojado en su cavidad.
 
-foto
+<figure><img src="../../.gitbook/assets/image (157).png" alt=""><figcaption></figcaption></figure>
 
 
-
-#### 8. `Siwtch 9.jpeg`
 
 * Panel posterior de Switch Cisco Catalyst:&#x20;
   * Vista trasera de un switch Cisco Catalyst 2960-X (Modelo: `WS-C2960X-24PS-L`).
@@ -171,11 +157,9 @@ foto
 * Verificación:&#x20;
   * Las etiquetas identificativas y de MAC son legibles y el chasis no presenta abolladuras que obstruyan los módulos posteriores.
 
-foto
+<figure><img src="../../.gitbook/assets/image (158).png" alt=""><figcaption></figcaption></figure>
 
 
-
-#### 9. `Siwtch8.jpeg`
 
 * Panel inferior / Base de chasis (Cisco Catalyst 2960-X):&#x20;
   * Vista de la chapa inferior del switch.
@@ -184,18 +168,16 @@ foto
 * Verificación:&#x20;
   * Los pies de goma de apoyo están completos y la estructura metálica inferior mantiene su rigidez estructural.
 
-foto
+<figure><img src="../../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
 
 
-
-#### 10. `Switch 10.jpeg`
 
 * Vista superior exterior (Cisco Catalyst):&#x20;
   * Tapa superior metálica del switch con el logotipo clásico de CISCO troquelado en relieve junto a las ranuras de ventilación longitudinales.
 * Verificación:&#x20;
   * La superficie se encuentra limpia, sin arañazos profundos y con los tornillos de sujeción laterales correctamente fijados al chasis.
 
-foto
+<figure><img src="../../.gitbook/assets/image (160).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -230,4 +212,5 @@ foto
   * Destornilladores: Juego de destornilladores aislados de punta plana y de estrella (Phillips) con mango rojo dieléctrico para protección contra descargas eléctricas.
   * Comprobador: Buscapolos o destornillador comprobador de tensión con cuerpo transparente y clip metálico.
 
-foto
+<figure><img src="../../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
+
