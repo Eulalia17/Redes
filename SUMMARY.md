@@ -39,3 +39,4 @@
     * [Práctica 3 - Representación de la red.](introduccion-a-las-redes/cisco/actividad-1-de-cisco/practica-3-representacion-de-la-red..md)
     * [Práctica 4 - Configuraciones iniciales en switch.](introduccion-a-las-redes/cisco/actividad-1-de-cisco/practica-4-configuraciones-iniciales-en-switch..md)
     * [Práctica 5 - ARP.](introduccion-a-las-redes/cisco/actividad-1-de-cisco/practica-5-arp..md)
+  * [M0370T1A5-allCisco](introduccion-a-las-redes/cisco/m0370t1a5-allcisco.md)
