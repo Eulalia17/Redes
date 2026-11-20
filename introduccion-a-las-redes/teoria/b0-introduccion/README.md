@@ -22,8 +22,6 @@ Puedes registrarte directamente con tu cuenta de correo institucional del centro
 2. Selecciona tu método de autenticación preferido (GitHub/Google/Email).
 3. Confirma tu perfil e introduce el nombre inicial para tu espacio de trabajo personal.
 
-
-
 ## 2: Comprender la Estructura Organizativa
 
 Para mantener tus asignaturas o proyectos ordenados, GitBook utiliza una jerarquía de 3 niveles principales:
@@ -64,15 +62,9 @@ La web o sitio publicado que finalmente visualizarán los usuarios, compañeros 
 
 Al crear una nueva documentación, GitBook te solicitará elegir el punto de partida adaptado a tus necesidades:
 
-
-
-<figure><img src="../../.gitbook/assets/Captura de pantalla 2026-09-23 091429.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/Captura de pantalla 2026-09-23 091429.png" alt=""><figcaption></figcaption></figure>
 
 `Consejo Práctico: Para tu primer trabajo práctico o memoria de laboratorio, selecciona "Docs template" o "Blank".`
-
-
 
 ## 4: Edición de Contenido y Uso de Markdown
 
@@ -80,35 +72,20 @@ GitBook combina un editor visual WYSIWYG intuitivo con soporte completo para sin
 
 Código Markdown Entrante:
 
+<figure><img src="../../../.gitbook/assets/Captura de pantalla 2026-09-23 091618.png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Captura de pantalla 2026-09-23 091618.png" alt=""><figcaption></figcaption></figure>
-
-
-
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
-
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 5: El Flujo de Trabajo Basado en Cambios
 
 A diferencia de los procesadores tradicionales, GitBook utiliza un sistema seguro de borrador por ramas (\*Change Requests\*):
 
-
-
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 6: Plan de Aprendizaje Sugerido (Paso a Paso)
 
 Sigue esta hoja de ruta progresiva para dominar la herramienta durante tus actividades de clase:
 
-
-
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>

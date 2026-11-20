@@ -2,7 +2,7 @@
 
 IPV4:
 
-<figure><img src="../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
 \#host
 
@@ -18,12 +18,12 @@ E: 240 - 255 - exp
 
 127.0.0.1 ⇒ Local host&#x20;
 
-<figure><img src="../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
 127.0.0.1 - IPv4
 
-<figure><img src="../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
 ::1 - IPv6
 
-<figure><img src="../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>

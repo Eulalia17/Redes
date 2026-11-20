@@ -16,7 +16,7 @@ eve-ng
 
 Diferencia entre un router y un switch?
 
-<figure><img src="../../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
 
 La principal diferencia es que un switch conecta dispositivos dentro de la misma red local (LAN) usando direcciones MAC, mientras que un router conecta diferentes redes entre sí y gestiona la salida a internet usando direcciones IP.
 
@@ -36,7 +36,7 @@ La principal diferencia es que un switch conecta dispositivos dentro de la misma
 
 R <⇒&#x20;
 
-<figure><img src="../../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
 
 ISP - R - PC&#x20;
 

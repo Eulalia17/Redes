@@ -59,9 +59,9 @@ Principales hitos históricos:
 
 ### Las capas del modelo osi&#x20;
 
-<figure><img src="../../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
 
 El **Modelo OSI** (Interconexión de Sistemas Abiertos) es un marco conceptual de 7 capas desarrollado por la ISO en 1984 para estandarizar las comunicaciones de red. Divide el proceso de transmisión de datos en niveles ordenados, desde el hardware físico hasta las aplicaciones del usuario.
 
@@ -188,7 +188,7 @@ Las 7 capas del Modelo OSI
 
 ## TCP/IP
 
-<figure><img src="../../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
 
 1. Bien conocidos ⇒ 0-1023
 2. Registringidos ⇒ 1024-49151
