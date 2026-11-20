@@ -19,7 +19,7 @@
     * [CISCO](introduccion-a-las-redes/teoria/b01-elementos-y-clasificacion-de-las-redes/cisco.md)
     * [Interesante saber esto](introduccion-a-las-redes/teoria/b01-elementos-y-clasificacion-de-las-redes/interesante-saber-esto.md)
     * [Modelo OSI](introduccion-a-las-redes/teoria/b01-elementos-y-clasificacion-de-las-redes/modelo-osi.md)
-    * [Resumen de redes.](introduccion-a-las-redes/teoria/b01-elementos-y-clasificacion-de-las-redes/resumen-de-redes..md)
+    * [Resumen de redes](introduccion-a-las-redes/teoria/b01-elementos-y-clasificacion-de-las-redes/resumen-de-redes.md)
 * [🧑‍💻 Actividad](introduccion-a-las-redes/actividad/README.md)
   * [🦎 Actividad 0 - Introducción](introduccion-a-las-redes/actividad/actividad-0-introduccion.md)
   * [🤖 Actividad 1 - M0370B0A1](introduccion-a-las-redes/actividad/actividad-1-m0370b0a1.md)
