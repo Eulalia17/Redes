@@ -69,7 +69,7 @@ Se utilizan tres redes: LAN1-Empresa, LAN2-Casa e ISP.
 ### Configuración general
 
 1. Cada servidor tendrá una página web que se propone personalizar.
-2. El servidor **Godo**, situado en el ISP, será el servidor DNS para todos los dispositivos.
+2. El servidor **Google**, situado en el ISP, será el servidor DNS para todos los dispositivos.
 3. Configurar RIP en cada router.
 
 ### Configuración en la empresa
@@ -79,7 +79,7 @@ Se utilizan tres redes: LAN1-Empresa, LAN2-Casa e ISP.
 
 ### Configuración en el ISP
 
-1. El servidor **Godo** ofrecerá los servicios DHCP y DNS.
+1. El servidor **Google** ofrecerá los servicios DHCP y DNS.
 2. El servidor **Paco** ofrecerá el servicio FTP.
 
 **Investigación:** investigar el uso del servicio FTP y cómo conectarse desde el equipo PC0 de la empresa al servicio FTP del servidor Paco en el ISP. Explicar el procedimiento e incluir una captura de pantalla.
