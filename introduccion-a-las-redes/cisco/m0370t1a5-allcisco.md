@@ -82,8 +82,6 @@ Se utilizan tres redes: LAN1-Empresa, LAN2-Casa e ISP.
 1. El servidor **Google** ofrecerá los servicios DHCP y DNS.
 2. El servidor **Paco** ofrecerá el servicio FTP.
 
-**Investigación:** investigar el uso del servicio FTP y cómo conectarse desde el equipo PC0 de la empresa al servicio FTP del servidor Paco en el ISP. Explicar el procedimiento e incluir una captura de pantalla.
-
 ### Configuración en casa: Home Router
 
 #### 1. Configuración básica
@@ -117,9 +115,8 @@ Configurar reglas de acceso a la red. En este caso, configurar una ACL estándar
 
 #### ISP
 
-1. Investigar qué cambios hay que realizar para que el servidor Paco proporcione parámetros de red (direcciones IP) a dos PC que se conectarán a la red **30.0.0.0/8**.
-2. Habilitar el servicio FTP. La actividad indica que resulta más interesante hacerlo desde Linux.
-3. Conectarse desde cualquier equipo al servidor donde se haya habilitado el servicio FTP.
+1. Habilitar el servicio FTP. La actividad indica que resulta más interesante hacerlo desde Linux.
+2. Conectarse desde cualquier equipo al servidor donde se haya habilitado el servicio FTP.
 
 #### Casa
 
@@ -163,3 +160,16 @@ Configurar reglas de acceso a la red. En este caso, configurar una ACL estándar
 24. **OpenVPN**
 25. **WireGuard**
 26. **NTP**
+
+
+
+## Investigación
+
+* Configuracion del ISP: **Investigación:** investigar el uso del servicio FTP y cómo conectarse desde el equipo PC0 de la empresa al servicio FTP del servidor Paco en el ISP. Explicar el procedimiento e incluir una captura de pantalla.
+*   Configuracion extra:
+
+    * ISP ⇒  Investigar qué cambios hay que realizar para que el servidor Paco proporcione parámetros de red (direcciones IP) a dos PC que se conectarán a la red **30.0.0.0/8**.
+
+
+
+## Bibliografia
