@@ -131,45 +131,172 @@ Configurar reglas de acceso a la red. En este caso, configurar una ACL estándar
 
 ### Preguntas sobre la práctica LAN–WAN–HOMELAN
 
-1. Incidencias tenidas durante el proceso de configuración.
-2. ¿Por qué no podemos acceder a la web del servidor de casa desde el ISP o la empresa? ¿Qué tenemos que configurar para poder hacerlo?
-3. ¿Cómo o qué detalle nos indica la conexión del router del proveedor de servicios con el _home router_ de casa?
-4. ¿Cómo se lleva a cabo internamente la resolución del dominio y la descarga del HTML desde la perspectiva del cliente (navegador) y del DNS?
-5. Cambia los DNS de los servidores y haz que todos apunten al servidor de Google **8.8.8.8**.
-6. ¿Cómo se lleva a cabo la resolución del dominio a nivel del DNS?
-7. Analiza la siguiente situación: imaginemos que al escenario configurado (LAN-WAN-HOMELAN) añadimos una sucursal de la empresa (LAN) y queremos que utilice la misma dirección IP de red: **192.168.1.0/24**. La sucursal también está conectada al ISP.
-8. ¿Podemos utilizar la misma dirección IP de red en la nueva sucursal y en la red de la empresa que ya tenemos configurada? Ten en cuenta lo que sucede en la realidad y lo que tenemos configurado en Cisco.
+#### Incidencias tenidas durante el proceso de configuración
+
+Las incidencias que he tenido mientras hacía la actividad han sido las siguientes:
+
+* Conflicto de subredes y direcciones duplicadas en la empresa: Al iniciar la actividad me encontré con etiquetas mezcladas entre `192.168.1.0/24` y `192.168.3.0/24`, además de direcciones repetidas en notas y equipos, por lo que lo fui corrigiendo para unificar la LAN de la empresa en `192.168.3.0/24` con puerta de enlace `192.168.3.1` y revisar las etiquetas antiguas que aún quedaban visibles.
+* Registro DNS apuntando a una subred anterior: El registro `A` de `[www.empresa.com](https://www.empresa.com)` apuntaba al principio a una IP de una subred anterior en vez de a la IP actual del servidor de la empresa (`192.168.3.66`), lo que impedía resolver bien el dominio hasta que lo actualicé.
+* Servidor FTP (`Server0`) sin IP estática ni gateway al principio: Tenía `Server0` en DHCP con `Default Gateway: 0.0.0.0`, lo que no le permitía responder con fiabilidad fuera de su red; lo pasé a configuración estática con su IP (`70.0.0.2`) y su _Default Gateway_ (`70.0.0.1`).
+* Conexión FTP con `Timed out`: Al probar la conexión FTP desde la empresa hacia el servidor, me salió `%Error opening ftp://... (Timed out)` y tuve que revisar las rutas RIP en los routers intermedios, el direccionamiento del servidor y el estado/usuario del servicio FTP.
+* Ajustes en páginas web HTML: Corregí errores de texto en las páginas personalizadas (como `"Servervicio"` en la web de la empresa y faltas de ortografía en la web de casa).
+
+#### ¿Por qué no podemos acceder a la web del servidor de casa desde el ISP o la empresa? ¿Qué tenemos que configurar para poder hacerlo?
+
+* Por qué no puedo acceder directamente: El servidor de casa (`Portal_de_la_casa` en `192.168.0.101`) tiene una IP privada (`192.168.0.0/24`), que no es enrutable por Internet ni por el ISP, y está detrás de mi router de casa (`Hause`), que aplica NAT y bloquea por defecto las conexiones entrantes que no se hayan solicitado desde dentro.
+* Qué tengo que configurar:
+  * Port Forwarding: En el router de casa (`Hause`, en _Applications & Gaming / Port Forwarding_), debo redirigir el puerto `80` (HTTP) —y el `443` si uso HTTPS— hacia la IP privada interna del servidor de casa (`192.168.0.101`).
+  * Dirección IP alcanzable: Tengo que asegurarme de que el router de casa tenga su IP WAN/Internet bien configurada (`13.0.0.2`) y alcanzable desde el ISP y desde la empresa.
+  * Registro DNS: Debo hacer que el dominio (por ejemplo `[www.portaldelacasa.com](https://www.portaldelacasa.com)` o `[www.casa.com](https://www.casa.com)`) apunte a la IP WAN del router de casa (`13.0.0.2`) y no directamente a la IP privada `192.168.0.101` desde redes externas.
+
+#### ¿Cómo o qué detalle nos indica la conexión del router del proveedor de servicios con el home router de casa?
+
+En mi topología lo veo por el enlace físico que une el router del lado del proveedor/ISP (`Gemeni`, interfaz `Gig0/0/0`) con el router inalámbrico de casa (`Hause`, interfaz `Gig 0/1` / `0/0`), compartiendo el segmento de enlace `13.0.0.0/8` (con `13.0.0.1` en `Gemeni` y `13.0.0.2` en la interfaz WAN de `Hause`) y con los indicadores de enlace activos en verde en Packet Tracer.
+
+#### ¿Cómo se lleva a cabo internamente la resolución del dominio y la descarga del HTML desde la perspectiva del cliente (navegador) y del DNS?
+
+1. Comprobación de caché y petición DNS: Cuando abro el navegador en un cliente (como `Mikel_Oyarzabal`) y pido `[www.empresa.com](https://www.empresa.com)`, primero revisa si ya tiene esa IP en caché; si no la tiene, el sistema envía una consulta DNS (puerto UDP/TCP `53`) al servidor DNS configurado (`8.8.8.8`).
+2. Respuesta del DNS: El servidor DNS busca el registro `A` correspondiente al dominio y me devuelve su IPv4 (`192.168.3.66`).
+3. Conexión TCP y petición HTTP: Con esa IP, el navegador inicia la conexión hacia el servidor web (puerto `80` en HTTP o `443` en HTTPS) a través de su _Default Gateway_ (`192.168.3.1`) y los routers intermedios.
+4. Descarga y renderizado del HTML: El servidor web responde (`HTTP/1.1 200 OK`) enviando el `index.html` y los recursos asociados (como imágenes o CSS), y el navegador lo interpreta y muestra en pantalla.
+
+#### Cambia los DNS de los servidores y haz que todos apunten al servidor de Google 8.8.8.8
+
+Configuro los DNS de los servidores y después hago que todos apunten al servidor de Google (`8.8.8.8`), tanto en la configuración estática como en los _pools_ DHCP y clientes (incluida la red de casa), comprobándolo después con `ipconfig /all` o en _IP Configuration_. _(En el enunciado se mencionan los nombres Trantor, Paco y Godo; en mi topología utilizo `Server LAN` en `192.168.3.66` para la empresa, `Google` en `8.8.8.8` y `Server0` para FTP y DHCP del ISP)._
+
+#### ¿Cómo se lleva a cabo la resolución del dominio a nivel del DNS?
+
+A nivel del DNS, el cliente manda una consulta con el nombre de dominio (FQDN) y el tipo de registro (habitualmente `A` para IPv4 o `AAAA` para IPv6). El servidor DNS consultado busca en su zona o registros locales o reenvía/resuelve jerárquicamente la consulta (servidores raíz, TLD, autoritativos o reenviadores) hasta conseguir la IP exacta, devolverla al cliente y guardarla en caché durante el tiempo que marque el TTL (_Time To Live_).
+
+#### ¿Podemos utilizar la misma dirección IP de red en la nueva sucursal (`192.168.1.0/24`) y en la red de la empresa que ya tenemos configurada?
+
+* En la realidad y en enrutamiento IP estándar (como RIP en Cisco Packet Tracer): No es recomendable ni funciona de forma transparente si dos redes interconectadas mediante routers con tablas de rutas comparten el mismo prefijo.
+* Motivo: Si dos redes LAN conectadas a un mismo entorno enrutado usan exactamente el mismo prefijo (por ejemplo `192.168.1.0/24`), los routers no pueden saber con claridad hacia qué sucursal mandar un paquete dirigido a `192.168.1.x`, generando ambigüedad de rutas y conflictos de encaminamiento.
+* Qué hago en la práctica: En mi red actual la empresa ya usa `192.168.3.0/24`, y en general lo correcto es asignar subredes distintas a cada sede (por ejemplo `192.168.1.0/24` para una sucursal y `192.168.2.0/24` o `192.168.3.0/24` para otra). Si en un caso real existieran redes solapadas que no se pudieran cambiar, tendría que recurrir a soluciones más complejas como NAT/PAT o túneles/VPN con traducción de direcciones, algo que prefiero evitar diseñando bien las subredes desde el inicio.
+
+
 
 ### Preguntas sobre puertos lógicos
 
-9. En relación con los puertos lógicos:
-10. ¿Cómo se clasifican dichos puertos y por qué (según su uso)?
-11. Indica qué puertos se utilizan para los siguientes servicios y qué hace cada uno de ellos:
-12. **FTP**
-13. **SSH**
-14. **DNS**
-15. **HTML / HTTP**
-16. **MySQL**
-17. **Portainer**
-18. **SMTP**
-19. **POP3**
-20. **IMAP**
-21. **DHCP**
-22. **VNC**
-23. **LDAP**
-24. **OpenVPN**
-25. **WireGuard**
-26. **NTP**
+#### ¿Cómo se clasifican dichos puertos y por qué (según su uso)?
+
+Según la IANA (_Internet Assigned Numbers Authority_), los puertos TCP/UDP (del `0` al `65535`) se clasifican en tres rangos según su uso habitual:
+
+* Puertos bien conocidos (_Well-Known Ports_, `0–1023`): Reservados para servicios y protocolos estándar del sistema y de red muy extendidos (como HTTP, FTP, SSH, DNS, SMTP, POP3, IMAP, NTP).
+* Puertos registrados (_Registered Ports_, `1024–49151`): Asignados a aplicaciones, software o servicios específicos de fabricantes u organizaciones (como MySQL o VNC).
+* Puertos dinámicos o efímeros (_Dynamic / Private Ports_, `49152–65535`): Utilizados temporalmente por los sistemas operativos y clientes para abrir conexiones salientes hacia los puertos de destino.
+
+#### Puertos y función de cada servicio pedido
+
+* FTP:
+  * Puerto: `20 / 21`
+  * Función: Transferencia de ficheros (`20` para datos y `21` para control), sin cifrar.
+  * Protocolo: TCP
+* SSH:
+  * Puerto: `22`
+  * Función: _Shell_ remota segura y transferencia cifrada de ficheros.
+  * Protocolo: TCP
+* DNS:
+  * Puerto: `53`
+  * Función: Resolución de nombres de dominio; UDP para consultas habituales y TCP para transferencias de zona o respuestas grandes.
+  * Protocolo: UDP y TCP
+* HTML / HTTP:
+  * Puerto: `80 / 443`
+  * Función: `80` para tráfico web HTTP sin cifrar y `443` para tráfico web HTTPS cifrado con TLS/SSL (sobre los que se sirve contenido HTML).
+  * Protocolo: TCP
+* MySQL:
+  * Puerto: `3306 / 3307`
+  * Función: Conexiones de clientes y aplicaciones a bases de datos MySQL.
+  * Protocolo: TCP
+* Portainer:
+  * Puerto: `9443 / 9000`
+  * Función: Gestión de contenedores (como Docker) mediante interfaz web/HTTPS.
+  * Protocolo: TCP
+* SMTP:
+  * Puerto: `25 / 465 / 587`
+  * Función: Envío y retransmisión de correo electrónico (`25` entre servidores / relevo tradicional, `465` SMTPS con SSL/TLS y `587` _submission_ desde cliente a servidor).
+  * Protocolo: TCP
+* POP3:
+  * Puerto: `110 / 995`
+  * Función: Recepción y descarga de correo (`110` sin cifrar y `995` POP3S con SSL/TLS; por defecto suele descargar y eliminar del servidor).
+  * Protocolo: TCP
+* IMAP:
+  * Puerto: `143 / 993`
+  * Función: Recepción de correo con sincronización manteniendo los mensajes en el servidor (`143` sin cifrar y `993` IMAPS con SSL/TLS).
+  * Protocolo: TCP
+* DHCP:
+  * Puerto: `67 / 68`
+  * Función: Asignación automática de parámetros de red (`67` para el servidor y `68` para los clientes).
+  * Protocolo: UDP
+* VNC:
+  * Puerto: `5900 / 5901 / ...`
+  * Función: Control remoto de la interfaz gráfica (escritorio) transmitiendo eventos de teclado, ratón y pantalla.
+  * Protocolo: TCP
+* LDAP:
+  * Puerto: `389 / 636`
+  * Función: Consulta y gestión de servicios de directorio (`389` LDAP y `636` LDAPS cifrado con TLS/SSL).
+  * Protocolo: TCP
+* OpenVPN:
+  * Puerto: `1194`
+  * Función: Creación de túneles VPN cifrados punto a punto o de sitio a sitio para conectar redes o usuarios remotos de forma segura.
+  * Protocolo: UDP / TCP
+* WireGuard:
+  * Puerto: `51820`
+  * Función: Establecimiento de túneles VPN cifrados modernos de alto rendimiento y baja latencia.
+  * Protocolo: UDP
+* NTP:
+  * Puerto: `123`
+  * Función: Sincronización horaria entre equipos y servidores de la red.
+  * Protocolo: UDP
 
 
 
-## Investigación
+### Investigación
 
-* Configuracion del ISP: **Investigación:** investigar el uso del servicio FTP y cómo conectarse desde el equipo PC0 de la empresa al servicio FTP del servidor Paco en el ISP. Explicar el procedimiento e incluir una captura de pantalla.
-*   Configuracion extra:
+#### Configuración del ISP: uso del servicio FTP y conexión desde un equipo de la empresa al servidor del ISP
 
-    * ISP ⇒  Investigar qué cambios hay que realizar para que el servidor Paco proporcione parámetros de red (direcciones IP) a dos PC que se conectarán a la red **30.0.0.0/8**.
+* Uso del servicio FTP: Utilizo el protocolo FTP (_File Transfer Protocol_) para subir, descargar, listar, renombrar o borrar archivos entre un cliente y un servidor a través de la red.
+*   Procedimiento desde un equipo de la empresa hacia `Server0` (Paco):
+
+    1. Compruebo que `Server0` tiene su IP configurada (`70.0.0.2` con _Default Gateway_ `70.0.0.1` en `ChatGPT`), es alcanzable desde el PC de la empresa (`192.168.3.0/24`) y tiene el servicio FTP activado (`On`) con usuario y contraseña creados.
+    2. Abro en el PC la pestaña Desktop > Command Prompt.
+    3. Ejecuto `ftp 70.0.0.2`.
+    4. Escribo el Username y el Password cuando me los pide.
+    5. Pruebo comandos como `dir` o `ls` para listar archivos, `get <archivo>` para descargar, `put <archivo>` para subir y `quit` para salir de la sesión.
 
 
 
-## Bibliografia
+#### Configuración extra (ISP): cambios para que el servidor dé IP por DHCP a dos PCs en `30.0.0.0/8`
+
+1. IP estática y puerta de enlace en el servidor: Configuro en `Server0` (conectado a través del switch `Raul_Asencio` y el router `ChatGPT` cuya interfaz `Gig 0/1` tiene `30.0.0.1`) una IP estática `30.0.0.2` en su interfaz hacia esa red, máscara `255.0.0.0` y puerta de enlace `30.0.0.1` (manteniendo `70.0.0.2` en su interfaz hacia `70.0.0.0/8` y anunciando `30.0.0.0` en RIP en `ChatGPT`).
+2. Activar y configurar el servicio DHCP en el servidor: Entro en Services > DHCP, pongo el servicio en On y configuro el _pool_ para `30.0.0.0/8` con:
+   * Default Gateway: `30.0.0.1`.
+   * DNS Server: `8.8.8.8`.
+   * Start IP Address: `30.0.0.10` (una IP libre fuera de la del router y la del servidor).
+   * Subnet Mask: `255.0.0.0`.
+   * Maximum Number of Users: al menos `2` (por ejemplo `20`) y pulso Add / Save.
+3. Configurar los dos PCs como clientes DHCP: En `Alejandro_Grimaldo` y `Fermin_Lopez` (conectados al switch `Raul_Asencio`), entro en Desktop > IP Configuration y marco DHCP para comprobar que reciben IP dentro de `30.0.0.0/8` (`30.0.0.10` y `30.0.0.20` o las asignadas), máscara `255.0.0.0`, gateway `30.0.0.1` y DNS `8.8.8.8`.
+
+### Bibliografía
+
+Enunciado de la práctica `M370T2A3 — Cisco Packet Tracer` (Módulo `0370 — Redes`, ciclo ASIX)&#x20;
+
+{% embed url="https://punkymo.gitbook.io/miwiki/redes/cisco/acceso-y-password" %}
+
+
+
+IANA — Service Name and Transport Protocol Port Number:
+
+{% embed url="https://www.iana.org/assignments/service-names-port-numbers" %}
+
+
+
+{% embed url="https://es.scribd.com/document/69979614/Listado-de-Puertos" %}
+
+
+
+{% embed url="https://oposergas.com/info/puertos-tcp-udp-mas-preguntados" %}
+
+
+
+{% embed url="https://ideaweb.es/puertos-servidores/" %}
