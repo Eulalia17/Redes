@@ -32,6 +32,10 @@ Gitbook de la tutura Alina 🫡:
 
 
 
+{% embed url="https://toolbox.itsec.tamu.edu/#recipe=From_Hex('Auto')&input=Njk2NTZlNjUyMDczNjU2ZTc0Njk2NDZmMjA3MTc1NjUyMDZmNzQ3MjZmNzMyMDZmNmE2ZjczMjA3MTc1CgoKCg" %}
+
+
+
 Mis sitios webs 🐢:
 
 {% embed url="https://apuntes-de-natasha.gitbook.io/asix" %}
