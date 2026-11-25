@@ -1,6 +1,7 @@
 # Table of contents
 
 * [🫡 README](README.md)
+* [👨‍🚒 Que vamos ha hacer a continuación?](que-vamos-ha-hacer-a-continuacion.md)
 
 ## 🫣 Introducción a las redes
 
@@ -30,6 +31,7 @@
     * [EN QUE CASOS ESPECIFICAMENTE SE PUEDE HACER LA TOPOLOGÍA DE ANILLO](introduccion-a-las-redes/actividad/topologia-clasificacion-transmision-estandares/en-que-casos-especificamente-se-puede-hacer-la-topologia-de-anillo.md)
     * [QUE TIPO DE EMPRESA MONTARIA LA TOPOLOGIA MALLA](introduccion-a-las-redes/actividad/topologia-clasificacion-transmision-estandares/que-tipo-de-empresa-montaria-la-topologia-malla.md)
     * [Mask-Bin-#Host-Rep.Red-Rep.Host-Privada](introduccion-a-las-redes/actividad/topologia-clasificacion-transmision-estandares/mask-bin-host-rep.red-rep.host-privada.md)
+  * [Un reto .... ciber](introduccion-a-las-redes/actividad/un-reto-....-ciber.md)
 * [Laboratorio](introduccion-a-las-redes/laboratorio/README.md)
   * [👩‍🔧 El Detrás de Escenas de Nuestro Servidor y Servidores de Red](introduccion-a-las-redes/laboratorio/el-detras-de-escenas-de-nuestro-servidor-y-servidores-de-red.md)
 * [Cisco](introduccion-a-las-redes/cisco/README.md)
